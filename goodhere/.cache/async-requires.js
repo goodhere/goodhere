@@ -5,6 +5,7 @@ exports.components = {
   "component---src-templates-organizations-js": () => import("./../src/templates/organizations.js" /* webpackChunkName: "component---src-templates-organizations-js" */),
   "component---src-pages-capital-js": () => import("./../src/pages/capital.js" /* webpackChunkName: "component---src-pages-capital-js" */),
   "component---src-templates-organization-js": () => import("./../src/templates/organization.js" /* webpackChunkName: "component---src-templates-organization-js" */),
+  "component---cache-dev-404-page-js": () => import("./dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-404-js": () => import("./../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-authback-js": () => import("./../src/pages/authback.js" /* webpackChunkName: "component---src-pages-authback-js" */),
   "component---src-pages-contribute-js": () => import("./../src/pages/contribute.js" /* webpackChunkName: "component---src-pages-contribute-js" */),
