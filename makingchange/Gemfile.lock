@@ -178,7 +178,7 @@ GEM
     public_suffix (3.0.1)
     puma (3.11.0)
     puma (3.11.0-java)
-    rack (2.0.3)
+    rack (2.2.2)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rails (5.1.4)
