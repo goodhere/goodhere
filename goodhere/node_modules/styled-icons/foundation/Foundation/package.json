@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Foundation.js",
+  "module": "./Foundation.esm.js",
+  "types": "./Foundation.d.ts"
+}

@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Air.js",
+  "module": "./Air.esm.js",
+  "types": "./Air.d.ts"
+}

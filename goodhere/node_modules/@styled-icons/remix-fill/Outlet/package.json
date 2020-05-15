@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Outlet.js",
+  "module": "./Outlet.esm.js",
+  "types": "./Outlet.d.ts"
+}

@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Tornado.js",
+  "module": "./Tornado.esm.js",
+  "types": "./Tornado.d.ts"
+}

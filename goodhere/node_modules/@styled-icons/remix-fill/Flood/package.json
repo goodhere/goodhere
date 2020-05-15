@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Flood.js",
+  "module": "./Flood.esm.js",
+  "types": "./Flood.d.ts"
+}

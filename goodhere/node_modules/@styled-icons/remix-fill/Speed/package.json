@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Speed.js",
+  "module": "./Speed.esm.js",
+  "types": "./Speed.d.ts"
+}

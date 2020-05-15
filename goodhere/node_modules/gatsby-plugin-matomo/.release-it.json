@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "before:init": "npm test",
+    "after:bump": "npm run changelog"
+  },
+  "git": {
+    "tagName": "v${version}"
+  },
+  "github": {
+    "release": true
+  },
+  "npm": {
+    "publish": false
+  }
+}

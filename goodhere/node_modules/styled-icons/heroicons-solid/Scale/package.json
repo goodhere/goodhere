@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Scale.js",
+  "module": "./Scale.esm.js",
+  "types": "./Scale.d.ts"
+}

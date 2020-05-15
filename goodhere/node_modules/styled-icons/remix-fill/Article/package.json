@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Article.js",
+  "module": "./Article.esm.js",
+  "types": "./Article.d.ts"
+}

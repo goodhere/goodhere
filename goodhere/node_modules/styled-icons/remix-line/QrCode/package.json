@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./QrCode.js",
+  "module": "./QrCode.esm.js",
+  "types": "./QrCode.d.ts"
+}

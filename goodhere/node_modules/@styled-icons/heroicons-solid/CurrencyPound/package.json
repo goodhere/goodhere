@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./CurrencyPound.js",
+  "module": "./CurrencyPound.esm.js",
+  "types": "./CurrencyPound.d.ts"
+}

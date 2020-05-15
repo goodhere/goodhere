@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Merge.js",
+  "module": "./Merge.esm.js",
+  "types": "./Merge.d.ts"
+}

@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./FolderZip.js",
+  "module": "./FolderZip.esm.js",
+  "types": "./FolderZip.d.ts"
+}

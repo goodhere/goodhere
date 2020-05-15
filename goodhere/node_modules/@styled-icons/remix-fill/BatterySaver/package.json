@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./BatterySaver.js",
+  "module": "./BatterySaver.esm.js",
+  "types": "./BatterySaver.d.ts"
+}

@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Backpack.js",
+  "module": "./Backpack.esm.js",
+  "types": "./Backpack.d.ts"
+}

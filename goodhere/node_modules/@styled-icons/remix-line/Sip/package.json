@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Sip.js",
+  "module": "./Sip.esm.js",
+  "types": "./Sip.d.ts"
+}

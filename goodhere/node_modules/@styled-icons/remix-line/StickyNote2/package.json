@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./StickyNote2.js",
+  "module": "./StickyNote2.esm.js",
+  "types": "./StickyNote2.d.ts"
+}

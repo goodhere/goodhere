@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./VideoChat.js",
+  "module": "./VideoChat.esm.js",
+  "types": "./VideoChat.d.ts"
+}

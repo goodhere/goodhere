@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Login.js",
+  "module": "./Login.esm.js",
+  "types": "./Login.d.ts"
+}

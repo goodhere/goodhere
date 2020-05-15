@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Hail.js",
+  "module": "./Hail.esm.js",
+  "types": "./Hail.d.ts"
+}

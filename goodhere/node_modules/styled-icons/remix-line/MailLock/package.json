@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./MailLock.js",
+  "module": "./MailLock.esm.js",
+  "types": "./MailLock.d.ts"
+}

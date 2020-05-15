@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Numbers.js",
+  "module": "./Numbers.esm.js",
+  "types": "./Numbers.d.ts"
+}

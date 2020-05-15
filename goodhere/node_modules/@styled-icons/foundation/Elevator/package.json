@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Elevator.js",
+  "module": "./Elevator.esm.js",
+  "types": "./Elevator.d.ts"
+}

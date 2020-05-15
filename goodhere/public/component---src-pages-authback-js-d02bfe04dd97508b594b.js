@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"NBh+":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),o=n("Bl7J");t.default=function(){return l.a.createElement(o.a,{contentClassName:"text-center pt-16"},l.a.createElement("h1",{className:"font-bold text-3xl m-2"},"Just a moment..."),l.a.createElement("p",{className:"lg:text-xl"},"We're logging you in now"))}}}]);
+//# sourceMappingURL=component---src-pages-authback-js-d02bfe04dd97508b594b.js.map

@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Signpost.js",
+  "module": "./Signpost.esm.js",
+  "types": "./Signpost.d.ts"
+}

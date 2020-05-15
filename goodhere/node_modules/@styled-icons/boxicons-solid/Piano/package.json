@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./Piano.js",
+  "module": "./Piano.esm.js",
+  "types": "./Piano.d.ts"
+}
