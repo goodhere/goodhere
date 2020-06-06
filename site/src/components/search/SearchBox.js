@@ -45,7 +45,7 @@ const SearchBox = ({
         onChange={event => refine(event.currentTarget.value)}
         onFocus={onFocus}
         onKeyDown={handleKeyDown}
-        placeholder="Search Climatescape"
+        placeholder="Search Good Here"
       />
     </div>
   )

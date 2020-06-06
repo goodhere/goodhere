@@ -27,12 +27,22 @@ export default function IndexPage({ data }) {
     <Layout contentClassName="text-gray-900">
       <SEO />
 
-      <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 px-2 sm:px-6 pt-8 pb-4 md:pt-16 md:pb-8">
-        Discover&nbsp;the&nbsp;organizations <br />{" "}
-        solving&nbsp;climate&nbsp;change
+      <h2 className="font-bold text-2xl md:text-4xl text-center tracking-wide text-gray-800 px-2 sm:px-8 pt-8 md:pt-16">
+        Good starts <u>here</u>
       </h2>
+      <p className="text-center tracking-wide text-gray-800 px-2 sm:px-6 pt-2 md:pt-4">
+        Good Here helps you discover impactful organizations, connect with the changemakers behind them, and pursue new social impact opportunities.
+      </p>
+      <p className="mt-8 text-center">
+        <a href="/contribute" className="inline-block text-2xl px-4 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent">
+          Add Your Project
+        </a>
+      </p>
 
       <div id="organizations" className="md:py-6">
+        <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 mt-6 mb-3">
+            View projects by category
+        </h2>
         <div className="p-3 flex flex-wrap max-w-6xl mx-auto">
           {topCategories.map(cat => (
             <TopicCard category={cat} key={cat.name} />
@@ -44,7 +54,7 @@ export default function IndexPage({ data }) {
       <div className="bg-gray-200 pb-12 my-12">
         <div id="organizations" className="py-6">
           <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 mt-6 mb-3">
-            Capital &amp; Startup Programs
+            Funding for social impact
           </h2>
           <div className="p-3 flex flex-wrap max-w-6xl mx-auto">
             {capitalTypes.map(({ name, slug, cover }) => (
@@ -58,18 +68,17 @@ export default function IndexPage({ data }) {
               />
             ))}
           </div>
-          <ViewAll href="/capital" name="Capital" />
+          <ViewAll href="/capital" name="Funding" />
         </div>
       </div>
 
       <div id="about" className="max-w-6xl mx-auto lg:flex items-start py-4">
         <div className="text-lg px-6 py-6 flex-1">
           <h2 className="text-2xl md:text-3xl font-light">
-            What is Climatescape?
+            What is Good Here?
           </h2>
           <p className="mt-4">
-            Climatescape is an open database of organizations leading the fight
-            against climate change.
+            Good Here is an open database of social impact organisations.
           </p>
           <p className="mt-4">
             Our content is community-moderated and published under the
@@ -84,7 +93,7 @@ export default function IndexPage({ data }) {
             </a>{" "}
             license. This website is open source and available{" "}
             <a
-              href="https://github.com/climatescape/climatescape.org"
+              href="https://github.com/benrmatthews/goodhere"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:no-underline"
@@ -96,7 +105,7 @@ export default function IndexPage({ data }) {
           <p className="mt-8 text-center">
             <Link
               to="/contribute/"
-              className="inline-block text-2xl px-4 py-2 border-2 rounded text-white bg-blue-500 border-blue-500 hover:text-blue-500 hover:border-blue-500 hover:bg-transparent"
+              className="inline-block text-2xl px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
             >
               Become a Contributor
             </Link>
@@ -105,18 +114,18 @@ export default function IndexPage({ data }) {
         <div className="text-lg px-6 py-6 flex-1">
           <h2 className="text-2xl md:text-3xl font-light">More is Coming</h2>
           <p className="mt-4">
-            The website you see today is only the beginning. Our team is already
-            designing the next iteration of Climatescape and we want your help.
+            This is just the beginning. Our team is already
+            designing the next iteration of Good Here and we want your help.
           </p>
           <p className="mt-4">
             Follow us on Twitter (
             <a
-              href="https://twitter.com/climatescape"
+              href="https://twitter.com/goodhereorg"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:no-underline"
             >
-              @climatescape
+              @goodhereorg
             </a>
             ) and subscribe to our newsletter to help shape our future.
           </p>
@@ -125,7 +134,7 @@ export default function IndexPage({ data }) {
               href={data.site.siteMetadata.newsletterUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-2xl px-4 py-2 border-2 rounded text-white bg-blue-500 border-blue-500 hover:text-blue-500 hover:border-blue-500 hover:bg-transparent"
+              className="inline-block text-2xl px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
             >
               Subscribe Here
             </a>
