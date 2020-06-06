@@ -6,8 +6,8 @@ import classnames from "classnames"
 
 import { useAuth0 } from "./Auth0Provider"
 import Search from "./search"
-import ClimatescapeLogo from "../images/climatescape.svg"
-import ClimatescapeMark from "../images/climatescape-mark.svg"
+import GoodHereLogo from "../images/GoodHereLogo.png"
+import GoodHereMark from "../images/GoodHereMark.png"
 
 const NavLink = ({ children, ...props }) => (
   <Link className="mr-1 p-2 hover:text-gray-900" {...props}>
@@ -27,13 +27,13 @@ const Navbar = () => {
         <div className="flex flex-grow">
           <Link className="px-2 sm:px-3 flex flex-none" to="/">
             <img
-              src={ClimatescapeLogo}
-              alt="Climatescape Logo"
+              src={GoodHereLogo}
+              alt="Good Here Logo"
               className="self-center w-56 h-auto hidden sm:inline"
             />
             <img
-              src={ClimatescapeMark}
-              alt="Climatescape Logo"
+              src={GoodHereMark}
+              alt="Good Here Logo"
               className="self-center h-8 w-8 sm:hidden"
             />
           </Link>
@@ -62,9 +62,9 @@ const Navbar = () => {
             "lg:flex lg:flex-row lg:items-center lg:mb-0"
           )}
         >
-          <NavLink to="/organizations">Organizations</NavLink>
-          <NavLink to="/capital">Capital</NavLink>
-          <NavLink to="/contribute">Contribute</NavLink>
+          <NavLink to="/organizations">Projects</NavLink>
+          <NavLink to="/capital">Funding</NavLink>
+          <NavLink to="/contribute">About</NavLink>
 
           {isAuthenticated ? (
             <button
@@ -74,12 +74,13 @@ const Navbar = () => {
               Sign out
             </button>
           ) : (
-            <button
-              className="mx-3 px-4 my-2 py-1 border rounded border-gray-600 hover:text-gray-900 hover:border-gray-800"
-              onClick={() => loginWithRedirect()}
-            >
-              Sign in
-            </button>
+            <a href="https://airtable.com/shrwx4PHtGAS15tUN" target="_blank">
+              <button
+                className="mx-3 px-4 my-2 py-1 border rounded border-gray-600 hover:text-gray-900 hover:border-gray-800"
+              >
+                Add project
+              </button>
+            </a>
           )}
         </div>
       </div>
