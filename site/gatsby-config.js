@@ -22,15 +22,15 @@ if (missingEnv.length) {
 
 const config = {
   siteMetadata: {
-    title: `Climatescape`,
-    description: `Discover the organizations solving climate change`,
-    author: `@climatescape`,
-    newsletterUrl: `https://climatescape.substack.com/subscribe`,
-    capitalAddFormUrl: `https://airtable.com/shrBK2iC6AQ4Yb2lq`,
-    capitalEditFormUrl: `https://airtable.com/shrFuDB1VcHqlYd1d`,
-    organizationAddFormUrl: `https://airtable.com/shrquIaKs7TQDqFFY`,
-    organizationEditFormUrl: `https://airtable.com/shrgoaO5ppAxlqt31`,
-    contributorFormUrl: `https://airtable.com/shr4WZDPBs7mk1doW`,
+    title: `Good Here`,
+    description: `Discover good things happening near you`,
+    author: `@goodhereorg`,
+    newsletterUrl: `https://goodhere.substack.com/subscribe`,
+    capitalAddFormUrl: `https://airtable.com/shrEjIuRpQPw3yLDJ`,
+    capitalEditFormUrl: `https://airtable.com/shr6Sja00g6yRyJkw`,
+    organizationAddFormUrl: `https://airtable.com/shrwx4PHtGAS15tUN`,
+    organizationEditFormUrl: `https://airtable.com/shrULYIG2ZQSyYhDn1`,
+    contributorFormUrl: `https://airtable.com/shrftH1zyJPidLg8f`,
     auth0: {
       domain: process.env.AUTH0_DOMAIN,
       clientId: process.env.AUTH0_CLIENT_ID,
