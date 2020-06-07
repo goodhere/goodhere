@@ -22,7 +22,7 @@ const getFooterLinks = data => [
     title: "CC BY-SA",
   },
   {
-    href: "https://twitter.com/climatescape",
+    href: "https://twitter.com/goodhereorg",
     title: "Twitter",
   },
   {
@@ -31,16 +31,16 @@ const getFooterLinks = data => [
   },
   {
     href:
-      "https://airtable.com/shraY1nLoEKJ8UsNH/tblPH0ZgLZYGVEhEo?blocks=hide",
-    title: "AirTable",
+      "https://blog.goodhere.org",
+    title: "Blog",
   },
   {
-    href: "https://github.com/climatescape/climatescape.org",
+    href: "https://github.com/benrmatthews/goodhere",
     title: "Github",
   },
   {
     href:
-      "https://www.notion.so/Climatescape-FAQ-ac0b381c39574ec8a8cd4ba1df4315d9",
+      "https://blog.goodhere.org/faqs/",
     title: "FAQ",
   },
 ]
@@ -77,16 +77,6 @@ const Layout = ({ children, contentClassName }) => {
         <div className="pt-3 sm:pt-0 flex justify-center">
           <a href="https://www.netlify.com">
             <img className="h-12" src={NetlifyLogo} alt="Deploys by Netlify" />
-          </a>
-          <a
-            href="https://simpleanalytics.com/climatescape.org"
-            className="ml-2"
-          >
-            <img
-              className="h-12"
-              src={SimpleLogo}
-              alt="Stats by Simple Analytics"
-            />
           </a>
         </div>
       </footer>
