@@ -83,7 +83,7 @@ function SEO({ description, lang, meta, title, imageUrl }) {
         },
         {
           name: "twitter:site",
-          content: "@climatescape",
+          content: "@goodhereorg",
         },
         {
           name: "twitter:title",

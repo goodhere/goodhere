@@ -28,7 +28,7 @@ export default function IndexPage({ data }) {
       <SEO />
 
       <h2 className="font-bold text-2xl md:text-4xl text-center tracking-wide text-gray-800 px-2 sm:px-8 pt-8 md:pt-16">
-        Good starts <u>here</u>
+        Good Starts <u>Here</u>
       </h2>
       <p className="text-center tracking-wide text-gray-800 px-2 sm:px-6 pt-2 md:pt-4">
         Good Here helps you discover impactful organizations, connect with the changemakers behind them, and pursue new social impact opportunities.
