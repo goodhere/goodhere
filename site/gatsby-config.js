@@ -29,7 +29,7 @@ const config = {
     capitalAddFormUrl: `https://airtable.com/shrEjIuRpQPw3yLDJ`,
     capitalEditFormUrl: `https://airtable.com/shr6Sja00g6yRyJkw`,
     organizationAddFormUrl: `https://airtable.com/shrwx4PHtGAS15tUN`,
-    organizationEditFormUrl: `https://airtable.com/shrULYIG2ZQSyYhDn1`,
+    organizationEditFormUrl: `https://airtable.com/shrULYIG2ZQSyYhDn`,
     contributorFormUrl: `https://airtable.com/shrftH1zyJPidLg8f`,
     auth0: {
       domain: process.env.AUTH0_DOMAIN,
