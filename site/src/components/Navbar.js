@@ -74,13 +74,12 @@ const Navbar = () => {
               Sign out
             </button>
           ) : (
-            <a href="https://airtable.com/shrwx4PHtGAS15tUN" target="_blank">
-              <button
-                className="mx-3 px-4 my-2 py-1 border rounded border-gray-600 hover:text-gray-900 hover:border-gray-800"
-              >
-                Add project
-              </button>
-            </a>
+            <button
+              className="mx-3 px-4 my-2 py-1 border rounded border-gray-600 hover:text-gray-900 hover:border-gray-800"
+              onClick={() => loginWithRedirect()}
+            >
+              Sign in
+            </button>
           )}
         </div>
       </div>

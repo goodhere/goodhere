@@ -34,7 +34,7 @@
     "gatsby-plugin-postcss": "^2.2.1",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sharp": "^2.5.3",
-    "gatsby-source-airtable": "^2.1.0",
+    "gatsby-source-airtable": "^2.1.1",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-source-graphql": "^2.5.1",
     "gatsby-transformer-sharp": "^2.4.3",
