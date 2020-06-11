@@ -31,7 +31,7 @@ export default function IndexPage({ data }) {
         Good Starts <u>Here</u>
       </h2>
       <p className="text-center tracking-wide text-gray-800 px-2 sm:px-6 pt-2 md:pt-4">
-        Good Here helps you discover impactful organizations, connect with the changemakers behind them, and pursue new social impact opportunities.
+        Good Here helps you discover impactful projects, connect with the changemakers behind them, and pursue new social impact opportunities.
       </p>
           {isAuthenticated ? (
           ) : (

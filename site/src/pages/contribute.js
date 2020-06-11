@@ -54,13 +54,23 @@ export default function ContributePage({ data }) {
 
   return (
     <Layout contentClassName="bg-gray-100">
-      <SEO title="Contribute to Climatescape" />
+      <SEO title="Contribute to Good Here" />
       <div className="flex flex-col mx-auto container lg:flex-row lg:w-4/5">
         <div className="lg:w-3/5 p-3 lg:p-6">
           <div>
-            <Header>Submit an project</Header>
+            <Header>About Good Here</Header>
             <p>
-              We invite anyone to submit new projects to Good Heere. The
+              Good Here is an open database of social impact organisations.
+            </p>
+            <p>
+              We help you discover impactful organizations, connect with the changemakers behind them, and pursue new social impact opportunities.
+            </p>
+            <p>
+              Our data is community-moderated and published under the permissive Creative Commons BY-SA license. This website is open source and available on GitHub.
+            </p>
+            <Header>Submit a project</Header>
+            <p>
+              We invite anyone to submit new projects to Good Here. The
               only requirement for acceptance is a positive social impact.
             </p>
             <p className="mt-2">
