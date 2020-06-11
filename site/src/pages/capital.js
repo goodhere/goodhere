@@ -54,8 +54,8 @@ const CapitalTemplate = ({
   return (
     <Layout contentClassName="bg-gray-100 px-3 sm:px-6">
       <SEO
-        title="Climate Capital on Climatescape"
-        description="Find climate-friendly VCs, grants, project finance, and more on Climatescape"
+        title="Social impact funding  on Good here"
+        description="Find impact-friendly VCs, grants, project finance, and more on Good Here"
       />
       <div className="flex flex-col mx-auto container lg:flex-row font-sans">
         <CapitalFilters
@@ -66,7 +66,7 @@ const CapitalTemplate = ({
         />
         <div className="lg:w-3/5">
           <IndexHeader
-            title={activeType?.name || "Climate Capital"}
+            title={activeType?.name || "Impact Funding"}
             buttonText="Add"
             buttonUrl={capitalAddFormUrl}
             filter={filter}

@@ -58,17 +58,16 @@ export default function ContributePage({ data }) {
       <div className="flex flex-col mx-auto container lg:flex-row lg:w-4/5">
         <div className="lg:w-3/5 p-3 lg:p-6">
           <div>
-            <Header>Submit an Organization</Header>
+            <Header>Submit an project</Header>
             <p>
-              We invite anyone to submit new organizations to our website. The
-              only requirement for acceptance is a positive impact to climate
-              change mitigation or adaptation.
+              We invite anyone to submit new projects to Good Heere. The
+              only requirement for acceptance is a positive social impact.
             </p>
             <p className="mt-2">
-              For investors, organizations providing grants, project finance, or
-              other forms of capital, use the{" "}
+              For investors and organizations providing grants, project finance, or
+              other forms of funding, use the{" "}
               <TextLink newWindow href={capitalAddFormUrl}>
-                Capital Form
+                Funding Form
               </TextLink>
               .
             </p>
@@ -76,13 +75,13 @@ export default function ContributePage({ data }) {
               For organizations providing products, services, research,
               networks, or otherwise, use the{" "}
               <TextLink newWindow href={organizationAddFormUrl}>
-                Organization Form
+                Project Form
               </TextLink>
               .
             </p>
             <Header className="pt-3">Join our Team</Header>
             <p className="my-2">
-              Climatescape is maintained by a global team of volunteers. If
+              Good Here is maintained by a global team of volunteers. If
               you&#39;re interested in helping out, here are the ways you can
               get involved:
             </p>
@@ -97,7 +96,7 @@ export default function ContributePage({ data }) {
                 Contribute to the development of this website{" "}
                 <TextLink
                   newWindow
-                  href="https://github.com/bloudermilk/climatescape/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22"
+                  href="https://github.com/benrmatthews/goodhere/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22"
                 >
                   on GitHub
                 </TextLink>
@@ -105,7 +104,7 @@ export default function ContributePage({ data }) {
             </ol>
             <p className="my-2">
               Want to help another way?{" "}
-              <TextLink href="mailto:brendan@sinceresoftware.co">
+              <TextLink href="mailto:ben@empower.agency">
                 Get in touch
               </TextLink>
             </p>
