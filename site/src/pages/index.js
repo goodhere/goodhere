@@ -33,15 +33,6 @@ export default function IndexPage({ data }) {
       <p className="text-center tracking-wide text-gray-800 px-2 sm:px-6 pt-2 md:pt-4">
         Good Here helps you discover impactful projects, connect with the changemakers behind them, and pursue new social impact opportunities.
       </p>
-          {isAuthenticated ? (
-          ) : (
-            <button
-              className="mx-3 px-4 my-2 py-1 border rounded border-gray-600 hover:text-gray-900 hover:border-gray-800"
-              onClick={() => loginWithRedirect()}
-            >
-              Sign up
-            </button>
-          )}
       <p className="mt-8 text-center">
         <a href="/contribute" className="inline-block text-2xl px-4 border-2 rounded text-red-500 bg-red-white border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent">
           Add Your Project
