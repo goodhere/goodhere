@@ -63,10 +63,12 @@ export default function ContributePage({ data }) {
               Good Here is an open database of social impact organisations.
             </p>
             <p className="mt-2">
-              We help you discover impactful organizations, connect with the changemakers behind them, and pursue new social impact opportunities.
+              We help you discover impactful organizations, connect with the
+              changemakers behind them, and pursue new social impact opportunities.
             </p>
             <p className="mt-2">
-              Our data is community-moderated and published under the permissive Creative Commons BY-SA license. This website is open source and available on GitHub.
+              Our data is community-moderated and published under the permissive Creative Commons BY-SA license. This website is open source and
+              available on GitHub.
             </p>
             <Header>Submit a project</Header>
             <p>

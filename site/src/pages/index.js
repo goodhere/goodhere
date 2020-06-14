@@ -31,17 +31,21 @@ export default function IndexPage({ data }) {
         Good Starts <u>Here</u>
       </h2>
       <p className="text-center tracking-wide text-gray-800 px-2 sm:px-6 pt-2 md:pt-4">
-        Good Here helps you discover impactful projects, connect with the changemakers behind them, and pursue new social impact opportunities.
+        Good Here helps you discover impactful projects, connect with the
+        changemakers behind them, and pursue new social impact opportunities.
       </p>
       <p className="mt-8 text-center">
-        <a href="/contribute" className="inline-block text-2xl px-4 border-2 rounded text-red-500 bg-red-white border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent">
+        <a
+         href="/contribute" 
+         className="inline-block text-2xl px-4 border-2 rounded text-red-500 bg-red-white border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent
+         ">
           Add Your Project
         </a>
       </p>
 
       <div id="organizations" className="md:py-6">
         <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 mt-6 mb-3">
-            View projects by category
+          View projects by category
         </h2>
         <div className="p-3 flex flex-wrap max-w-6xl mx-auto">
           {topCategories.map(cat => (
@@ -115,7 +119,8 @@ export default function IndexPage({ data }) {
           <h2 className="text-2xl md:text-3xl font-light">More is Coming</h2>
           <p className="mt-4">
             This is just the beginning. Our team is already
-            designing the next iteration of Good Here and we want your help.
+            designing the next 
+            iteration of Good Here and we want your help.
           </p>
           <p className="mt-4">
             Follow us on Twitter (

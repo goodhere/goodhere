@@ -13,7 +13,6 @@ import Navbar from "./Navbar"
 
 import "./layout.css"
 import NetlifyLogo from "../images/netlify.svg"
-import SimpleLogo from "../images/simple.svg"
 import FooterLink from "./FooterLink"
 
 const getFooterLinks = data => [
@@ -31,7 +30,7 @@ const getFooterLinks = data => [
   },
   {
     href:
-      "https://blog.goodhere.org",
+    "https://blog.goodhere.org",
     title: "Blog",
   },
   {
@@ -40,7 +39,7 @@ const getFooterLinks = data => [
   },
   {
     href:
-      "https://blog.goodhere.org/faqs/",
+    "https://blog.goodhere.org/faqs/",
     title: "FAQ",
   },
 ]

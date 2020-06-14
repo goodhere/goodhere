@@ -13,7 +13,8 @@ import { useStaticQuery, graphql } from "gatsby"
 const DefaultImage = [
   {
     property: "og:image",
-    content: "https://d33wubrfki0l68.cloudfront.net/2949164acb5879ae8150618dbee4736bb9f18337/9a947/static/goodherelogo-b651a084ff364adba2de437aa39c19f2.png",
+    content:
+    "https://d33wubrfki0l68.cloudfront.net/2949164acb5879ae8150618dbee4736bb9f18337/9a947/static/goodherelogo-b651a084ff364adba2de437aa39c19f2.png",
   },
   {
     property: "og:image:type",
