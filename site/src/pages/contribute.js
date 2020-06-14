@@ -59,13 +59,13 @@ export default function ContributePage({ data }) {
         <div className="lg:w-3/5 p-3 lg:p-6">
           <div>
             <Header>About Good Here</Header>
-            <p>
+            <p className="mt-2">
               Good Here is an open database of social impact organisations.
             </p>
-            <p>
+            <p className="mt-2">
               We help you discover impactful organizations, connect with the changemakers behind them, and pursue new social impact opportunities.
             </p>
-            <p>
+            <p className="mt-2">
               Our data is community-moderated and published under the permissive Creative Commons BY-SA license. This website is open source and available on GitHub.
             </p>
             <Header>Submit a project</Header>
