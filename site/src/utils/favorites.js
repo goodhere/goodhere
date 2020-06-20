@@ -22,7 +22,7 @@ const GetFavorites = gql`
 // For Gatsby to pull favorites when building the site
 export const query = graphql`
   fragment StaticFavorites on Query {
-    goodhere {
+    climatescape {
       favoritesCount {
         recordId
         count
