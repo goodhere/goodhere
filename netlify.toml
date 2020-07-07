@@ -5,5 +5,5 @@
   # Always build the site, regardless of code updates: https://bit.ly/3fxbQO6
   ignore = "sh this-always-fails"
 
-
-package = "netlify-plugin-algolia-export"
+[[plugins]]
+  package = "netlify-plugin-algolia-export"
