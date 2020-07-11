@@ -1,17 +1,17 @@
-![](https://img.shields.io/badge/main-not%20master-green)
+![](https://img.shields.io/badge/master-green)
 ![](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
 ![](https://img.shields.io/github/contributors/benrmatthews/goodhere)
 ![](https://img.shields.io/github/issues/benrmatthews/goodhere)
 
 # Good Here
 
+This is the source code behind [goodhere.org][goodhere], an open database of social impact organisations.
+
 Good Here helps you discover impactful projects, connect with the changemakers behind them, and pursue new social impact opportunities.
 
 ## Beta
 
-- Beta site: https://goodhere.org/
-
-This is the source code behind [goodhere.org][goodhere], an open database of social impact organisations.
+Beta website: https://goodhere.org/
 
 ## Developer Setup
 
