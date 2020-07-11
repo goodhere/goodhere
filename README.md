@@ -1,20 +1,28 @@
-# Climatescape
+![](https://img.shields.io/badge/main-not%20master-green)
+![](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
+![](https://img.shields.io/github/contributors/benrmatthews/goodhere)
+![](https://img.shields.io/github/issues/benrmatthews/goodhere)
 
-**Discover the organizations solving climate change**
+# Good Here
 
-This is the source code behind [climatescape.org][climatescape], an open
-database of organizations leading the fight against climate change.
+Good Here helps you discover impactful projects, connect with the changemakers behind them, and pursue new social impact opportunities.
+
+## Beta
+
+- Beta site: https://goodhere.org/
+
+This is the source code behind [goodhere.org][goodhere], an open database of social impact organisations.
 
 ## Developer Setup
 
 **Note:** you need to be invited to our Airtable project to run this project
 locally. The process is really simple and we accept anyone who's interested in
-helping out. Simply fill out the [Climatescape Contributor Application][contributor-app].
+helping out. Simply fill out the [GoodHere Contributor Application][contributor-app].
 
 1. Follow these steps to get the project installed on your local dev machine.
    ```bash
-   $ git clone https://github.com/climatescape/climatescape.org.git
-   $ cd climatescape.org/site
+   $ git clone https://github.com/benrmatthews/goodhere.git
+   $ cd goodhere/site
    $ npm install
    ```
 2. Copy your Airtable API key from this page: [Airtable account][airtable-account]
@@ -29,22 +37,6 @@ helping out. Simply fill out the [Climatescape Contributor Application][contribu
    ```
 
 ---
-
-**Bonus**: <details><summary>Want to preview changes on other devices?</summary>
-
-<p>
-Use the <a href="https://www.gatsbyjs.org/docs/gatsby-cli/#preview-changes-on-other-devices">host option</a>
-
-```bash
-$ npm run develop -- -H 0.0.0.0
-```
-
-Then, at the end of the command Gatsby will show you:  
-`On Your Network: http://192.168.0.XX:8000/`
-You can now use this IP address / port to access your local environment from your phone. 👌
-
-</p>
-</details>
 
 ### Bulding
 
@@ -85,8 +77,8 @@ happen any time code is pushed to GitHub, whether to master or another branch.
 Additionally, we use [Zapier][zapier] to deploy once per day in order to publish
 new content even when code changes aren't happening.
 
-[climatescape]: https://climatescape.org/
-[contributor-app]: https://airtable.com/shr4WZDPBs7mk1doW
+[goodhere]: https://goodhere.org/
+[contributor-app]: https://airtable.com/shrftH1zyJPidLg8f
 [airtable-account]: https://airtable.com/account
 [gatsby]: https://www.gatsbyjs.org/
 [react]: https://reactjs.org/
