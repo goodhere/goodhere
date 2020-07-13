@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/52ee35e4-6c7d-4fba-aad2-59e9ac81e88e/deploy-status)](https://app.netlify.com/sites/goodhere/deploys)
 ![](https://img.shields.io/badge/master-green)
 ![](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
 ![](https://img.shields.io/github/contributors/benrmatthews/goodhere)
