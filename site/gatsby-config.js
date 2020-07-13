@@ -126,7 +126,6 @@ const config = {
         defautQuality: 75,
       },
     },
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-nprogress`,
