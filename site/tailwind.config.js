@@ -1,4 +1,5 @@
 module.exports = {
+  purge: false,
   theme: {
     maxHeight: {
       "12": "3em",
