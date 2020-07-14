@@ -150,7 +150,6 @@ if (process.env.ALGOLIA_ADMIN_KEY) {
       queries: algolia.queries,
       chunkSize: 10000,
       enablePartialUpdates: true,
-      matchFields: ["digest"],
     },
   })
 }
