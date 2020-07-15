@@ -62,9 +62,10 @@ const Navbar = () => {
             "lg:flex lg:flex-row lg:items-center lg:mb-0"
           )}
         >
+          <NavLink to="/contribute">About</NavLink>
           <NavLink to="/organizations">Projects</NavLink>
           <NavLink to="/capital">Funding</NavLink>
-          <NavLink to="/contribute">About</NavLink>
+          <NavLink to="https://goodhere.discourse.group/">Community</NavLink>
 
           {isAuthenticated ? (
             <button
