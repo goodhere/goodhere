@@ -33,6 +33,7 @@
     "gatsby-plugin-offline": "^3.2.17",
     "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sharp": "2.6.21",
     "gatsby-source-airtable": "^2.1.1",
     "gatsby-source-filesystem": "^2.3.19",
     "gatsby-source-graphql": "^2.6.2",
