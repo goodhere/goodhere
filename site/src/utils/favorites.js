@@ -45,7 +45,7 @@ function indexFavoritesData(data) {
   }))
 }
 
-const APP_CLAIM = "https://goodhere.org/app"
+const APP_CLAIM = "https://climatescape.org/app"
 // Fetches all favorites data from the GraphQL API, waiting until Auth0 is done
 // loading so that the current user's favorites may be fetched. Returns a hooked
 // object that will eventually take the following shape:
