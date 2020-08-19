@@ -39,7 +39,7 @@ helping out. Simply fill out the [GoodHere Contributor Application][contributor-
 
 ---
 
-### Bulding
+### Building
 
 Before submitting your Pull Request you should test that the project builds.
 
