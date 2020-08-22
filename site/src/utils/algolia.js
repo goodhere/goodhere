@@ -1,6 +1,7 @@
 const crypto = require("crypto")
 
 const { makeSlug } = require("./slug")
+const indexName = `Pages`
 
 const pageQuery = `query PagesQuery {
   organizations: allAirtable(filter: {table: {eq: "Organizations"}}) {

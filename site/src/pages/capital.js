@@ -21,12 +21,12 @@ const CapitalTemplate = ({
     allOrganizations: allOrganizationData,
     activeType: activeTypeData,
     site,
-    climatescape,
+    goodhere,
   },
   pageContext: { activeTypeId },
 }) => {
   const [filter, setFilter, applyFilter] = useOrganizationFilterState()
-  const favorites = useFavorites(climatescape)
+  const favorites = useFavorites(goodhere)
   const capitalTypes = transformCapitalTypes(capitalTypeNodes)
   const activeType = capitalTypes.find(({ id }) => id === activeTypeId)
   const { capitalAddFormUrl } = site.siteMetadata
@@ -54,7 +54,7 @@ const CapitalTemplate = ({
   return (
     <Layout contentClassName="bg-gray-100 px-3 sm:px-6">
       <SEO
-        title="Social impact funding  on Good here"
+        title="Social impact funding on Good here"
         description="Find impact-friendly VCs, grants, project finance, and more on Good Here"
       />
       <div className="flex flex-col mx-auto container lg:flex-row font-sans">

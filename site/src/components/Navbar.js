@@ -76,7 +76,7 @@ const Navbar = () => {
             </button>
           ) : (
             <button
-              className="mx-3 px-4 my-2 py-1 border rounded border-red-600 hover:text-red-900 hover:border-red-800"
+              className="mx-3 px-4 my-2 py-1 border rounded border-grey-600 hover:text-red-900 hover:border-red-800"
               onClick={() => loginWithRedirect()}
             >
               Sign in
