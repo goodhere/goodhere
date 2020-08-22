@@ -35,7 +35,7 @@ export default function IndexPage({ data }) {
         changemakers behind them, and pursue new social impact opportunities.
       </p>
       <p className="text-center text-lg tracking-wide text-gray-800 px-12 sm:px-6 pt-2 md:pt-4">
-        Currently tracking 2,774 projects and 453 funders.
+        Currently tracking 2,773 projects and 453 funders.
       </p>
       <p className="mt-8 text-center">
         <a
