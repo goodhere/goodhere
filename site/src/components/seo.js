@@ -125,7 +125,7 @@ function SEO({ description, lang, meta, title, imageUrl }) {
 SEO.defaultProps = {
   lang: "en",
   meta: [],
-  description: "",
+  description: "Find social impact startups and funding",
 }
 
 SEO.propTypes = {

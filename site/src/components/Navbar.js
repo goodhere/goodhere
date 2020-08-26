@@ -63,7 +63,7 @@ const Navbar = () => {
           )}
         >
           <NavLink to="/contribute">About</NavLink>
-          <NavLink to="/organizations">Projects</NavLink>
+          <NavLink to="/organizations">Startups</NavLink>
           <NavLink to="/capital">Funding</NavLink>
           <NavLink to="https://goodhere.discourse.group/">Community</NavLink>
 

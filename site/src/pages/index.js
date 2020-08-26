@@ -27,28 +27,26 @@ export default function IndexPage({ data }) {
     <Layout contentClassName="text-gray-900">
       <SEO />
 
-      <h2 className="font-bold text-2xl md:text-4xl text-center tracking-wide text-gray-800 px-2 sm:px-8 pt-8 md:pt-16">
-        Good Starts <u>Here</u>
-      </h2>
+      <h1 className="font-bold text-2xl md:text-4xl text-center tracking-wide text-gray-800 px-2 sm:px-8 pt-8 md:pt-16">
+        Find social impact startups and funding
+      </h1>
       <p className="text-center text-lg tracking-wide text-gray-800 px-16 sm:px-64 pt-2 md:pt-4">
-        Good Here helps you discover impactful projects, connect with the
-        changemakers behind them, and pursue new social impact opportunities.
-      </p>
-      <p className="text-center text-lg tracking-wide text-gray-800 px-12 sm:px-6 pt-2 md:pt-4">
-        Currently tracking 2,775 projects and 453 funders.
+        Good Here helps you discover <a href="/organizations" class="hover:underline hover:text-red-500">social impact startups</a>, connect with 
+        the <a href="https://goodhere.discourse.group/" class="hover:underline hover:text-red-500">social impact community</a>, and find <a href="/capital" class="hover:underline hover:text-red-500">social impact funding</a>. 
+        Currently tracking <a href="/organizations" class="hover:underline hover:text-red-500">2,775 startups</a> and <a href="/capital" class="hover:underline hover:text-red-500">453 funders</a>.
       </p>
       <p className="mt-8 text-center">
         <a
          href="/contribute" 
          className="inline-block text-2xl px-4 border-2 rounded text-red-500 bg-red-white border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent
          ">
-          Add Your Project
+          Add Your Startup
         </a>
       </p>
 
       <div id="organizations" className="md:py-6">
         <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 mt-6 mb-3">
-          View projects by category
+          View social impact startups by category
         </h2>
         <div className="p-3 flex flex-wrap max-w-6xl mx-auto">
           {topCategories.map(cat => (
@@ -61,7 +59,7 @@ export default function IndexPage({ data }) {
       <div className="bg-gray-200 pb-12 my-12">
         <div id="organizations" className="py-6">
           <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 mt-6 mb-3">
-            Funding for social impact
+            Funding for social impact startups
           </h2>
           <div className="p-3 flex flex-wrap max-w-6xl mx-auto">
             {capitalTypes.map(({ name, slug, cover }) => (
@@ -85,7 +83,7 @@ export default function IndexPage({ data }) {
             What is Good Here?
           </h2>
           <p className="mt-4">
-            Good Here is an open database of social impact organisations.
+            Good Here is an open database of social impact startups and funding opportunities.
           </p>
           <p className="mt-4">
             Our content is community-moderated and published under the

@@ -44,7 +44,7 @@ function OrganizationsTemplate({
 
   return (
     <Layout contentClassName="bg-gray-100 px-3 sm:px-6">
-      <SEO title={`${categoryName || "All"} projects on Good Here`} />
+      <SEO title={`${categoryName || "All"} startups on Good Here`} />
 
       <div className="flex flex-col mx-auto container lg:flex-row font-sans ">
         <CategoryList
@@ -54,7 +54,7 @@ function OrganizationsTemplate({
         />
         <div className="lg:w-3/5">
           <IndexHeader
-            title={categoryName || "All Projects"}
+            title={categoryName || "All Social Impact Startups"}
             buttonText="Add"
             buttonUrl={organizationAddFormUrl}
             filter={filter}
