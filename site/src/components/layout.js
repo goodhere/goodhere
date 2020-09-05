@@ -38,9 +38,13 @@ const getFooterLinks = data => [
     title: "Github",
   },
   {
+    href: "https://goodhere.discourse.group/",
+    title: "Community",
+  },
+  {
     href:
-    "https://blog.goodhere.org/faqs/",
-    title: "FAQ",
+    "mailto:hello@goodhere.org",
+    title: "Contact Us",
   },
 ]
 
@@ -93,6 +97,9 @@ const Layout = ({ children, contentClassName }) => {
             <div class="w-full md:w-1/4 text-center md:text-left">
               <h5 class="uppercase mb-6 font-bold">Good Here Blog</h5>
               <ul class="mb-4">
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/introducing-good-here-find-social-impact-startups-and-funding/" class="hover:underline text-gray-600 hover:text-red-500">Introducing Good Here</a>
+                </li>
                 <li class="mt-2">
                   <a href="https://blog.goodhere.org/ethical-platforms/" class="hover:underline text-gray-600 hover:text-red-500">Ethical platforms</a>
                 </li>

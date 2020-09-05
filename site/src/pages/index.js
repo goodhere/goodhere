@@ -33,11 +33,11 @@ export default function IndexPage({ data }) {
       <p className="text-center text-lg tracking-wide text-gray-800 px-16 sm:px-64 pt-2 md:pt-4">
         Good Here helps you discover <a href="/organizations" class="hover:underline hover:text-red-500">social impact startups</a>, connect with 
         the <a href="https://goodhere.discourse.group/" class="hover:underline hover:text-red-500">social impact community</a>, and find <a href="/capital" class="hover:underline hover:text-red-500">social impact funding</a>. 
-        Currently tracking <a href="/organizations" class="hover:underline hover:text-red-500">2,775 startups</a> and <a href="/capital" class="hover:underline hover:text-red-500">453 funders</a>.
+        Currently tracking <u><a href="/organizations" class="hover:underline hover:text-red-500">2,775 startups</a> and <u></u><a href="/capital" class="hover:underline hover:text-red-500">453 funders</a></u>.
       </p>
       <p className="mt-8 text-center">
         <a
-         href="/contribute" 
+         href="https://airtable.com/shrwx4PHtGAS15tUN" 
          className="inline-block text-2xl px-4 border-2 rounded text-red-500 bg-red-white border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent
          ">
           Add Your Startup
