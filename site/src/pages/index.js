@@ -33,7 +33,7 @@ export default function IndexPage({ data }) {
       <p className="text-center text-lg tracking-wide text-gray-800 px-16 sm:px-64 pt-2 md:pt-4">
         Good Here helps you discover <a href="/organizations" class="hover:underline hover:text-red-500">social impact startups</a>, connect with 
         the <a href="https://goodhere.discourse.group/" class="hover:underline hover:text-red-500">social impact community</a>, and find <a href="/capital" class="hover:underline hover:text-red-500">social impact funding</a>. 
-        Currently tracking <u><a href="/organizations" class="hover:underline hover:text-red-500">2,775 startups</a> and <u></u><a href="/capital" class="hover:underline hover:text-red-500">453 funders</a></u>.
+        Currently tracking <u><a href="/organizations" class="hover:underline hover:text-red-500">2,775 startups</a></u> and <u><a href="/capital" class="hover:underline hover:text-red-500">453 funders</a></u>.
       </p>
       <p className="mt-8 text-center">
         <a
@@ -43,6 +43,59 @@ export default function IndexPage({ data }) {
           Add Your Startup
         </a>
       </p>
+
+      {/* <div id="about" className="max-w-6xl mx-auto lg:flex items-start py-4">
+        <div className="text-lg px-6 py-6 flex-1">
+          <h2 className="md:font-bold">
+            What is Good Here?
+          </h2>
+          <p className="mt-4">
+            Good Here is an open database of social impact startups and funding opportunities.
+          </p>
+          <p className="mt-8 text-center">
+            <Link
+              to="/contribute/"
+              className="inline-block px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
+            >
+              Become a Contributor
+            </Link>
+          </p>
+        </div>
+        <div className="text-lg px-6 py-6 flex-1">
+          <h2 className="md:font-bold">More is Coming</h2>
+          <p className="mt-4">
+            This is just the beginning. Our team is already
+            designing the next 
+            iteration of Good Here and we want your help.
+          </p>
+          <p className="mt-8 text-center">
+            <a
+              href={data.site.siteMetadata.newsletterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
+            >
+              Subscribe Here
+            </a>
+          </p>
+        </div>
+        <div className="text-lg px-6 py-6 flex-1">
+          <h2 className="md:font-bold">
+            What is Good Here?
+          </h2>
+          <p className="mt-4">
+            Good Here is an open database of social impact startups and funding opportunities.
+          </p>
+          <p className="mt-8 text-center">
+            <Link
+              to="/contribute/"
+              className="inline-block px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
+            >
+              Become a Contributor
+            </Link>
+          </p>
+        </div>
+      </div> */}
 
       <div id="organizations" className="md:py-6">
         <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 mt-6 mb-3">
