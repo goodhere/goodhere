@@ -39,7 +39,7 @@ export default function IndexPage({ data }) {
        Join a thriving community of social entrepreneurs and impact investors.
       </p>
       <p className="mt-8 text-center">
-        <iframe className="inline-block" src="https://goodhere.substack.com/embed" height="80">
+      <iframe className="inline-block" src="https://goodhere.substack.com/embed" height="80" scrolling="no">
         </iframe>
       </p>
       <p className="mt-8 text-center">

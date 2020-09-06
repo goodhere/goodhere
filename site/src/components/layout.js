@@ -65,6 +65,15 @@ const Layout = ({ children, contentClassName }) => {
     <div className="flex flex-col min-h-screen antialiased">
       <Navbar />
       <main className={`flex-grow pt-16 ${contentClassName}`}>{children}</main>
+      <footer class="bg-gray-400">
+      <p className="mt-8 text-center">
+        Join a thriving community of social entrepreneurs and impact investors.
+      </p>
+      <p className="mt-8 text-center">
+        <iframe className="inline-block" src="https://goodhere.substack.com/embed" height="80" scrolling="no">
+        </iframe>
+      </p>
+      </footer>
       <footer class="bg-gray-100">
         <div class="container mx-auto px-6 pt-10 pb-6">
           <div class="flex flex-wrap">
