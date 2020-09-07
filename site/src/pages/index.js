@@ -77,76 +77,56 @@ export default function IndexPage({ data }) {
         </div>
       </div>
 
-      <div id="about" className="max-w-6xl mx-auto lg:flex items-start py-4">
+{/*       <div id="about" className="max-w-6xl mx-auto lg:flex items-start py-4">
         <div className="text-lg px-6 py-6 flex-1">
-          <h2 className="text-2xl md:text-3xl font-light">
+          <h2 className="font-bold text-center">
             What is Good Here?
           </h2>
-          <p className="mt-4">
+          <p className="mt-4 text-center">
             Good Here is an open database of social impact startups and funding opportunities.
-          </p>
-          <p className="mt-4">
-            Our content is community-moderated and published under the
-            permissive{" "}
-            <a
-              href="http://creativecommons.org/licenses/by-sa/4.0/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:no-underline"
-            >
-              Creative Commons BY-SA
-            </a>{" "}
-            license. This website is open source and available{" "}
-            <a
-              href="https://github.com/benrmatthews/goodhere"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:no-underline"
-            >
-              on GitHub
-            </a>
-            .
           </p>
           <p className="mt-8 text-center">
             <Link
               to="/contribute/"
-              className="inline-block text-2xl px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
+              className="inline-block px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
             >
               Become a Contributor
             </Link>
           </p>
         </div>
         <div className="text-lg px-6 py-6 flex-1">
-          <h2 className="text-2xl md:text-3xl font-light">More is Coming</h2>
-          <p className="mt-4">
-            This is just the beginning. Our team is already
-            designing the next 
-            iteration of Good Here and we want your help.
-          </p>
-          <p className="mt-4">
-            Follow us on Twitter (
-            <a
-              href="https://twitter.com/goodhereorg"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:no-underline"
-            >
-              @goodhereorg
-            </a>
-            ) and subscribe to our newsletter to help shape our future.
+          <h2 className="font-bold text-center">
+            What is Good Here?
+          </h2>
+          <p className="mt-4 text-center">
+            Good Here is an open database of social impact startups and funding opportunities.
           </p>
           <p className="mt-8 text-center">
-            <a
-              href={data.site.siteMetadata.newsletterUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-2xl px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
+            <Link
+              to="/contribute/"
+              className="inline-block px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
             >
-              Subscribe Here
-            </a>
+              Become a Contributor
+            </Link>
           </p>
         </div>
-      </div>
+        <div className="text-lg px-6 py-6 flex-1">
+          <h2 className="font-bold text-center">
+            What is Good Here?
+          </h2>
+          <p className="mt-4 text-center">
+            Good Here is an open database of social impact startups and funding opportunities.
+          </p>
+          <p className="mt-8 text-center">
+            <Link
+              to="/contribute/"
+              className="inline-block px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
+            >
+              Become a Contributor
+            </Link>
+          </p>
+        </div>
+      </div> */}
     </Layout>
   )
 }

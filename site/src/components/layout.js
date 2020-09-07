@@ -65,7 +65,10 @@ const Layout = ({ children, contentClassName }) => {
     <div className="flex flex-col min-h-screen antialiased">
       <Navbar />
       <main className={`flex-grow pt-16 ${contentClassName}`}>{children}</main>
-      <footer class="bg-gray-400">
+      <footer class="bg-white">
+      <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 mt-6 mb-3">
+            Sign up for updates
+          </h2>
       <p className="mt-8 text-center">
         Join a thriving community of social entrepreneurs and impact investors.
       </p>
