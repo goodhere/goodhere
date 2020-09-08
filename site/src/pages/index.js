@@ -80,7 +80,7 @@ export default function IndexPage({ data }) {
 {/*       <div id="about" className="max-w-6xl mx-auto lg:flex items-start py-4">
         <div className="text-lg px-6 py-6 flex-1">
           <h2 className="font-bold text-center">
-            What is Good Here?
+            Submit your startup
           </h2>
           <p className="mt-4 text-center">
             Good Here is an open database of social impact startups and funding opportunities.
@@ -90,7 +90,7 @@ export default function IndexPage({ data }) {
               to="/contribute/"
               className="inline-block px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
             >
-              Become a Contributor
+              Find funding
             </Link>
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function IndexPage({ data }) {
               to="/contribute/"
               className="inline-block px-4 py-2 border-2 rounded text-white bg-red-500 border-red-500 hover:text-red-500 hover:border-red-500 hover:bg-transparent"
             >
-              Become a Contributor
+              Join the community
             </Link>
           </p>
         </div>
