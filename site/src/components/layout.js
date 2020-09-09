@@ -102,7 +102,7 @@ const Layout = ({ children, contentClassName }) => {
                   <a href="https://airtable.com/shrEjIuRpQPw3yLDJ" class="hover:underline text-gray-600 hover:text-red-500">Submit social impact funding</a>
                 </li>
                 <li class="mt-2">
-                  <a href="mailto:ben@empower.agency" class="hover:underline text-gray-600 hover:text-red-500">Contact Good Here</a>
+                  <a href="mailto:hello@goodhere.org" class="hover:underline text-gray-600 hover:text-red-500">Contact Good Here</a>
                 </li>
               </ul>
             </div>
