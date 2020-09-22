@@ -113,10 +113,19 @@ const Layout = ({ children, contentClassName }) => {
                   <a href="https://blog.goodhere.org/introducing-good-here-find-social-impact-startups-and-funding/" class="hover:underline text-gray-600 hover:text-red-500">Introducing Good Here</a>
                 </li>
                 <li class="mt-2">
+                  <a href="https://blog.goodhere.org/sustainable-business/" class="hover:underline text-gray-600 hover:text-red-500">Sustainable Business</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/funding-for-social-impact-startups/" class="hover:underline text-gray-600 hover:text-red-500">Funding for social impact startups</a>
+                </li>
+                <li class="mt-2">
                   <a href="https://blog.goodhere.org/ethical-platforms/" class="hover:underline text-gray-600 hover:text-red-500">Ethical platforms</a>
                 </li>
                 <li class="mt-2">
                   <a href="https://blog.goodhere.org/digital-wellbeing/" class="hover:underline text-gray-600 hover:text-red-500">Digital wellbeing</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/open-movement/" class="hover:underline text-gray-600 hover:text-red-500">Open Movement</a>
                 </li>
               </ul>
             </div>
