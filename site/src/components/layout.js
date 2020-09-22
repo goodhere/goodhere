@@ -125,7 +125,7 @@ const Layout = ({ children, contentClassName }) => {
                   <a href="https://blog.goodhere.org/digital-wellbeing/" class="hover:underline text-gray-600 hover:text-red-500">Digital wellbeing</a>
                 </li>
                 <li class="mt-2">
-                  <a href="https://blog.goodhere.org/open-movement/" class="hover:underline text-gray-600 hover:text-red-500">Open Movement</a>
+                  <a href="https://blog.goodhere.org/open-movement/" class="hover:underline text-gray-600 hover:text-red-500">Open Movements</a>
                 </li>
               </ul>
             </div>
