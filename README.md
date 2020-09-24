@@ -11,8 +11,6 @@
 
 # Good Here
 
-# Nominees, Candidates and Digital Public Goods
-
 Welcome! 👋  
 
 We are glad that have found this repo and you are interested in Good Here.
