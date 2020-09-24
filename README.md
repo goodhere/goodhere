@@ -3,8 +3,19 @@
 ![](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
 ![](https://img.shields.io/github/contributors/benrmatthews/goodhere)
 ![](https://img.shields.io/github/issues/benrmatthews/goodhere)
+![](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fgoodhere.org%2F)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 
 # Good Here
+
+# Nominees, Candidates and Digital Public Goods
+
+Welcome! 👋  
+
+We are glad that have found this repo and you are interested in Good Here.
 
 This is the source code behind [goodhere.org][goodhere], an open database of social impact organisations.
 
@@ -14,7 +25,15 @@ Good Here helps you discover impactful projects, connect with the changemakers b
 
 Beta website: https://goodhere.org/
 
-## Developer Setup
+## 🙋🏽 How to nominate a social impact startup
+
+We invite anyone to submit new projects to Good Here. The only requirement for acceptance is a positive social impact.
+
+For investors and organizations providing grants, project finance, or other forms of funding, use the [Funding Form](https://airtable.com/shrEjIuRpQPw3yLDJ).
+
+For organizations providing products, services, research, networks, or otherwise, use the [Project Form](https://airtable.com/shrwx4PHtGAS15tUN).
+
+## 🛠 Developer Setup
 
 **Note:** you need to be invited to our Airtable project to run this project
 locally. The process is really simple and we accept anyone who's interested in
@@ -39,7 +58,7 @@ helping out. Simply fill out the [GoodHere Contributor Application][contributor-
 
 ---
 
-### Building
+## 🏗️ Building
 
 Before submitting your Pull Request you should test that the project builds.
 
@@ -59,7 +78,7 @@ To build the project locally:
 
     Note: if you do not have the `serve` command you can install it using the `npm install -g serve` command
 
-## Architecture
+## 👷 Architecture
 
 Our `site` is built with [Gatsby][gatsby], a static site generator that uses
 [React][react] and [GraphQL][graphql] under the hood. Static site generators are
