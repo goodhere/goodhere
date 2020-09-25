@@ -32,7 +32,7 @@ For organizations providing products, services, research, networks, or otherwise
 
 All data and content is licensed Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-The Good Here software is has the MIT license: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+The Good Here software has the  MIT license: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 👷 Architecture
 
