@@ -4,9 +4,6 @@
 ![](https://img.shields.io/github/contributors/benrmatthews/goodhere)
 ![](https://img.shields.io/github/issues/benrmatthews/goodhere)
 ![](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fgoodhere.org%2F)
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 
 
 # Good Here
@@ -30,6 +27,42 @@ We invite anyone to submit new projects to Good Here. The only requirement for a
 For investors and organizations providing grants, project finance, or other forms of funding, use the [Funding Form](https://airtable.com/shrEjIuRpQPw3yLDJ).
 
 For organizations providing products, services, research, networks, or otherwise, use the [Project Form](https://airtable.com/shrwx4PHtGAS15tUN).
+
+## 📝 Licenses
+
+All data and content is licensed Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+The Good Here software is has the MIT license: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## 👷 Architecture
+
+Our `site` is built with [Gatsby][gatsby], a static site generator that uses
+[React][react] and [GraphQL][graphql] under the hood. Static site generators are
+used to create static websites (i.e. plain HTML/CSS/JS) from dynamic data at
+**build time**. Compare this to a traditional dynamic website that uses a
+**runtime** (PHP, Ruby, Python, etc) to generate pages on-demand.
+
+In place of a custom backend, we use [Airtable][airtable] as our content
+management system and API layer. This allows us to iterate on our data schema
+and admin workflows extremely quickly, without having to write any code. We use
+a plugin called [gatsby-source-airtable][gatsby-source-airtable] to expose our
+data to Gatsby's GraphQL layer.
+
+We deploy to [Netlify][netlify], a simple low-cost static web host. Deploys
+happen any time code is pushed to GitHub, whether to master or another branch.
+Additionally, we use [Zapier][zapier] to deploy once per day in order to publish
+new content even when code changes aren't happening.
+
+[goodhere]: https://goodhere.org/
+[contributor-app]: https://airtable.com/shrftH1zyJPidLg8f
+[airtable-account]: https://airtable.com/account
+[gatsby]: https://www.gatsbyjs.org/
+[react]: https://reactjs.org/
+[graphql]: https://graphql.org/
+[airtable]: https://airtable.com/
+[zapier]: https://zapier.com/
+[gatsby-source-airtable]: https://github.com/jbolda/gatsby-source-airtable
+[netlify]: https://www.netlify.com/
 
 ## 🛠 Developer Setup
 
@@ -76,32 +109,3 @@ To build the project locally:
 
     Note: if you do not have the `serve` command you can install it using the `npm install -g serve` command
 
-## 👷 Architecture
-
-Our `site` is built with [Gatsby][gatsby], a static site generator that uses
-[React][react] and [GraphQL][graphql] under the hood. Static site generators are
-used to create static websites (i.e. plain HTML/CSS/JS) from dynamic data at
-**build time**. Compare this to a traditional dynamic website that uses a
-**runtime** (PHP, Ruby, Python, etc) to generate pages on-demand.
-
-In place of a custom backend, we use [Airtable][airtable] as our content
-management system and API layer. This allows us to iterate on our data schema
-and admin workflows extremely quickly, without having to write any code. We use
-a plugin called [gatsby-source-airtable][gatsby-source-airtable] to expose our
-data to Gatsby's GraphQL layer.
-
-We deploy to [Netlify][netlify], a simple low-cost static web host. Deploys
-happen any time code is pushed to GitHub, whether to master or another branch.
-Additionally, we use [Zapier][zapier] to deploy once per day in order to publish
-new content even when code changes aren't happening.
-
-[goodhere]: https://goodhere.org/
-[contributor-app]: https://airtable.com/shrftH1zyJPidLg8f
-[airtable-account]: https://airtable.com/account
-[gatsby]: https://www.gatsbyjs.org/
-[react]: https://reactjs.org/
-[graphql]: https://graphql.org/
-[airtable]: https://airtable.com/
-[zapier]: https://zapier.com/
-[gatsby-source-airtable]: https://github.com/jbolda/gatsby-source-airtable
-[netlify]: https://www.netlify.com/
