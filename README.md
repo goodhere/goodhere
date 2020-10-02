@@ -5,16 +5,15 @@
 ![](https://img.shields.io/github/issues/benrmatthews/goodhere)
 ![](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fgoodhere.org%2F)
 
+![](https://res-4.cloudinary.com/hnzp3houk/image/upload/q_auto/v1/ghost-blog-images/Introducing-Good-Here---find-social-impact-startups-and-funding.png)
 
 # Good Here
-
-https://res-4.cloudinary.com/hnzp3houk/image/upload/q_auto/v1/ghost-blog-images/Introducing-Good-Here---find-social-impact-startups-and-funding.png
 
 Welcome! 👋  
 
 We are glad that have found this repo and you are interested in Good Here.
 
-This is the source code behind (Good Here](https://goodhere.org/), an open database of social impact organisations.
+This is the source code behind [Good Here](https://goodhere.org/), an open database of social impact organisations.
 
 Good Here helps you discover impactful projects, connect with the changemakers behind them, and pursue new social impact opportunities.
 
