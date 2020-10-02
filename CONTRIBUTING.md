@@ -1,4 +1,4 @@
-# Contributing
+# Contributing to Good Here
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Good Here is powered by people like you. Your contributions help us create an open source database of social impact startups and funding that reaches everyone.
@@ -34,7 +34,7 @@ Issues labeled [help wanted](https://github.com/goodhere/goodhere/labels/Help%20
 5. Your PR will be reviewed by one of the repository's maintainers. Most PRs have at least one change requested before they're merged so don't be offended if your change doesn't get accepted on the first try!
 
 ### Improving our documentation
-Is our documentation up to date? Have we covered everything we should? Could our wording be improved? Read our [Documentation Style Guide](https://github.com/medic/medic-docs/blob/master/development/docs-style-guide.md) then open a pull request with your suggested changes or additions.
+Is our documentation up to date? Have we covered everything we should? Could our wording be improved? Read our [Documentation Style Guide](https://github.com/goodhere/goodhere/docs-style-guide.md) then open a pull request with your suggested changes or additions.
 
 Want to talk about Documentation generally? Join our [Community Forum](https://goodhere.discourse.group/)!
 
@@ -71,7 +71,7 @@ If you believe you've found a security vulnerability in one of our products or p
 
 **Note:** Good HEre does not involve release management and acceptance testing. Help us maintain the quality of our documentation by submitting a pull request (PR) with any suggested changes. 
 
-Is our documentation up to date? Have we covered everything we should? Could our wording be improved? Read our [Documentation Style Guide](https://github.com/medic/medic-docs/blob/master/development/docs-style-guide.md) then open a pull request with your suggested changes or additions.
+Is our documentation up to date? Have we covered everything we should? Could our wording be improved? Read our [Documentation Style Guide](https://github.com/goodhere/goodhere/docs-style-guide.md) then open a pull request with your suggested changes or additions.
 Want to talk about Documentation generally? Join our [Community Forum](https://goodhere.discourse.group/)!
 
 ### Code of Conduct
