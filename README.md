@@ -1,13 +1,13 @@
+![](https://res-4.cloudinary.com/hnzp3houk/image/upload/q_auto/v1/ghost-blog-images/Introducing-Good-Here---find-social-impact-startups-and-funding.png)
+
+# Good Here
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/52ee35e4-6c7d-4fba-aad2-59e9ac81e88e/deploy-status)](https://app.netlify.com/sites/goodhere/deploys)
 ![](https://img.shields.io/badge/master-green)
 ![](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
 ![](https://img.shields.io/github/contributors/benrmatthews/goodhere)
 ![](https://img.shields.io/github/issues/benrmatthews/goodhere)
 ![](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fgoodhere.org%2F)
-
-![](https://res-4.cloudinary.com/hnzp3houk/image/upload/q_auto/v1/ghost-blog-images/Introducing-Good-Here---find-social-impact-startups-and-funding.png)
-
-# Good Here
 
 Welcome! 👋  
 
