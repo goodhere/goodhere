@@ -16,6 +16,10 @@ This is the source code behind [goodhere.org][goodhere], an open database of soc
 
 Good Here helps you discover impactful projects, connect with the changemakers behind them, and pursue new social impact opportunities.
 
+## Contact
+
+The Good Here team can be contacted by emailing hello@goodhere.org
+
 ## Beta
 
 Beta website: https://goodhere.org/
