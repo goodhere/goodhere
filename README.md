@@ -8,13 +8,21 @@
 
 # Good Here
 
+https://res-4.cloudinary.com/hnzp3houk/image/upload/q_auto/v1/ghost-blog-images/Introducing-Good-Here---find-social-impact-startups-and-funding.png
+
 Welcome! 👋  
 
 We are glad that have found this repo and you are interested in Good Here.
 
-This is the source code behind [goodhere.org][goodhere], an open database of social impact organisations.
+This is the source code behind (Good Here](https://goodhere.org/), an open database of social impact organisations.
 
 Good Here helps you discover impactful projects, connect with the changemakers behind them, and pursue new social impact opportunities.
+
+## How to contribute
+
+Good Here is powered by people like you. Your contributions help us create an open source database of social impact startups and funding that reaches everyone.
+
+Want to help contribute? Read our [guide to contributing](https://github.com/goodhere/goodhere/blob/master/CONTRIBUTING.md).
 
 ## Contact
 
