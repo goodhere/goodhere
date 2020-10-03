@@ -69,7 +69,7 @@ If you believe you've found a security vulnerability in one of our products or p
 
 ### Improving our documentation
 
-**Note:** Good HEre does not involve release management and acceptance testing. Help us maintain the quality of our documentation by submitting a pull request (PR) with any suggested changes. 
+**Note:** Good Here does not involve release management and acceptance testing. Help us maintain the quality of our documentation by submitting a pull request (PR) with any suggested changes. 
 
 Is our documentation up to date? Have we covered everything we should? Could our wording be improved? Read our [Documentation Style Guide](https://github.com/goodhere/goodhere/docs-style-guide.md) then open a pull request with your suggested changes or additions.
 Want to talk about Documentation generally? Join our [Community Forum](https://goodhere.discourse.group/)!
