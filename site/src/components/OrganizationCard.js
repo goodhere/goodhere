@@ -82,10 +82,24 @@ export default function OrganizationCard({ categoryId, organization }) {
               <OrganizationCategory key={category.name} text={category.name} />
             ))}
             {hqLocation && <OrganizationLocation location={hqLocation} />}
-            {headcount && (
-              <OrganizationHeadcount key="headcount" text={headcount} />
-            )}
-            {orgType && <OrganizationOrgType key="orgtype" text={orgType} />}
+
+            <div className="mt-1 flex justify-between">
+              <div>
+                {headcount && (
+                  <OrganizationHeadcount key="headcount" text={headcount} />
+                )}
+                {orgType && (
+                  <OrganizationOrgType key="orgtype" text={orgType} />
+                )}
+              </div>
+              <FavoriteButton
+                recordId={organization.recordId}
+                favoriteId={organization.favorite?.id}
+                count={organization.favorite?.count}
+                className="sm:hidden flex items-center"
+                countClassName="ml-4"
+              />
+            </div>
           </div>
         </div>
       </Link>

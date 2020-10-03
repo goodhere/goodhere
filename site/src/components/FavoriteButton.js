@@ -30,6 +30,7 @@ const DeleteFavorite = gql`
 export default function FavoriteButton({
   recordId,
   className,
+  countClassName = "",
   count: propCount,
   favoriteId: propFavoriteId,
 }) {
@@ -87,7 +88,7 @@ export default function FavoriteButton({
           "text-red-500": favorited,
         })}
       />
-      <div className="text-sm">{count}</div>
+      <div className={classnames("text-sm", countClassName)}>{count}</div>
     </button>
   )
 }
