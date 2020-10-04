@@ -23,7 +23,7 @@ Good Here is powered by people like you. Your contributions help us create an op
 
 Want to help contribute? Read our [guide to contributing](https://github.com/goodhere/goodhere/blob/master/CONTRIBUTING.md).
 
-## Contact
+## 📧 Contact
 
 The Good Here team can be contacted by emailing hello@goodhere.org
 
@@ -97,6 +97,20 @@ helping out. Simply fill out the [GoodHere Contributor Application][contributor-
    ```bash
    $ npm run develop
    ```
+---
+
+## 🔑 Environment Variables
+
+There are several environment variables you will need in order to run the project:
+
+* GRAPHQL_URI
+* AIRTABLE_BASE_ID
+* AUTH0_DOMAIN
+* AUTH0_CLIENT_ID
+* GATSBY_ALGOLIA_APP_ID
+* GATSBY_ALGOLIA_SEARCH_KEY
+
+Please fill out the [GoodHere Contributor Application][contributor-app] or email hello@goodhere.org to be provided with these environmnet variables.
 
 ---
 
