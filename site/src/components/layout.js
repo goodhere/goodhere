@@ -81,7 +81,7 @@ const Layout = ({ children, contentClassName }) => {
         <div class="container mx-auto px-6 pt-10 pb-6">
           <div class="flex flex-wrap">
           <div class="w-full md:w-1/4 text-center md:text-left">
-              <h5 class="uppercase mb-6 font-bold">Good Here</h5>
+              <h5 class="uppercase mb-6 font-bold"><a href="https://goodhere.org/">Good Here</a></h5>
               <ul class="mb-4">
                 <li class="mt-2">
                   <a href="/contribute" class="hover:underline text-gray-600 hover:text-red-500">About Good Here</a>
@@ -107,7 +107,7 @@ const Layout = ({ children, contentClassName }) => {
               </ul>
             </div>
             <div class="w-full md:w-1/4 text-center md:text-left">
-              <h5 class="uppercase mb-6 font-bold">Good Here Blog</h5>
+              <h5 class="uppercase mb-6 font-bold"><a href="https://blog.goodhere.org/">Good Here Blog</a></h5>
               <ul class="mb-4">
                 <li class="mt-2">
                   <a href="https://blog.goodhere.org/introducing-good-here-find-social-impact-startups-and-funding/" class="hover:underline text-gray-600 hover:text-red-500">Introducing Good Here</a>
@@ -125,12 +125,18 @@ const Layout = ({ children, contentClassName }) => {
                   <a href="https://blog.goodhere.org/digital-wellbeing/" class="hover:underline text-gray-600 hover:text-red-500">Digital wellbeing</a>
                 </li>
                 <li class="mt-2">
-                  <a href="https://blog.goodhere.org/open-movement/" class="hover:underline text-gray-600 hover:text-red-500">Open Movements</a>
+                  <a href="https://blog.goodhere.org/open-movement/" class="hover:underline text-gray-600 hover:text-red-500">Open movements</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/what-is-tech-for-good/" class="hover:underline text-gray-600 hover:text-red-500">Tech for good</a>
+                </li>
+                <li class="mt-2">
+                  <a href="hhttps://blog.goodhere.org/social-impact-startups-facts-statistics/" class="hover:underline text-gray-600 hover:text-red-500">Social entrepreneurship facts and statistics</a>
                 </li>
               </ul>
             </div>
             <div class="w-full md:w-1/4 text-center md:text-left">
-              <h5 class="uppercase mb-6 font-bold">Social Impact Startups</h5>
+              <h5 class="uppercase mb-6 font-bold"><a href="https://goodhere.org/organizations">Social Impact Startups</a></h5>
               <ul class="mb-4">
                 <li class="mt-2">
                   <a href="/categories/arts-and-culture" class="hover:underline text-gray-600 hover:text-red-500">Arts & Culture Startups</a>
@@ -162,7 +168,7 @@ const Layout = ({ children, contentClassName }) => {
               </ul>
             </div>
             <div class="w-full md:w-1/4 text-center md:text-left">
-              <h5 class="uppercase mb-6 font-bold">Social Impact Funding</h5>
+              <h5 class="uppercase mb-6 font-bold"><a href="https://goodhere.org/capital">Social Impact Funding</a></h5>
               <ul class="mb-4">
                 <li class="mt-2">
                   <a href="/capital/venture-capital" class="hover:underline text-gray-600 hover:text-red-500">Venture Capital for Social Impact</a>
