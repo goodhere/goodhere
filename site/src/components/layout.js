@@ -148,16 +148,16 @@ const Layout = ({ children, contentClassName }) => {
                   <a href="/categories/education" class="hover:underline text-gray-600 hover:text-red-500">Education Startups</a>
                 </li>
                 <li class="mt-2">
-                  <a href="/categories/environment-and-climate" class="hover:underline text-gray-600 hover:text-red-500">Climate Change Startups</a>
+                  <a href="/categories/climate-change" class="hover:underline text-gray-600 hover:text-red-500">Climate Change Startups</a>
                 </li>
                 <li class="mt-2">
-                  <a href="/categories/health" class="hover:underline text-gray-600 hover:text-red-500">Healthcare Startups</a>
+                  <a href="/categories/healthcare" class="hover:underline text-gray-600 hover:text-red-500">Healthcare Startups</a>
                 </li>
                 <li class="mt-2">
-                  <a href="/categories/human-and-civil-rights" class="hover:underline text-gray-600 hover:text-red-500">Human Rights Startups</a>
+                  <a href="/categories/human-rights" class="hover:underline text-gray-600 hover:text-red-500">Human Rights Startups</a>
                 </li>
                 <li class="mt-2">
-                  <a href="/categories/media" class="hover:underline text-gray-600 hover:text-red-500">Media Startups</a>
+                  <a href="/categories/media-and-apps" class="hover:underline text-gray-600 hover:text-red-500">Media Startups</a>
                 </li>
                 <li class="mt-2">
                   <a href="/categories/research-and-policy" class="hover:underline text-gray-600 hover:text-red-500">Research Startups</a>
