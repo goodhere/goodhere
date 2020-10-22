@@ -34,7 +34,7 @@ Issues labeled [help wanted](https://github.com/goodhere/goodhere/labels/Help%20
 5. Your PR will be reviewed by one of the repository's maintainers. Most PRs have at least one change requested before they're merged so don't be offended if your change doesn't get accepted on the first try!
 
 ### Improving our documentation
-Is our documentation up to date? Have we covered everything we should? Could our wording be improved? Read our [Documentation Style Guide](https://github.com/goodhere/goodhere/docs-style-guide.md) then open a pull request with your suggested changes or additions.
+Is our documentation up to date? Have we covered everything we should? Could our wording be improved? Read our [Documentation Style Guide](https://github.com/goodhere/goodhere/blob/master/docs-style-guide.md) then open a pull request with your suggested changes or additions.
 
 Want to talk about Documentation generally? Join our [Community Forum](https://goodhere.discourse.group/)!
 
