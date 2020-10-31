@@ -1,94 +1,84 @@
-import React, { useState, useMemo } from "react"
-import noop from "lodash/noop"
-import classnames from "classnames"
-import { useMutation } from "@apollo/react-hooks"
-import gql from "graphql-tag"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHeart as heartFilled } from "@fortawesome/free-solid-svg-icons"
-import { faHeart as heartOutline } from "@fortawesome/free-regular-svg-icons"
-
+import { keyBy, mapValues } from "lodash"
+import { useState, useEffect, useMemo } from "react"
+import { useLazyQuery, gql } from "@apollo/client"
+import { graphql } from "gatsby"
 import { useAuth0 } from "../components/Auth0Provider"
 
-const AddFavorite = gql`
-  mutation AddFavorite($recordId: String!) {
-    insertFavorites(objects: [{ recordId: $recordId }]) {
-      returning {
-        id
+const GetFavorites = gql`
+  query GetFavorites($loggedIn: Boolean!, $userId: uuid) {
+    favorites(where: { userId: { _eq: $userId } }) @include(if: $loggedIn) {
+      id
+      recordId
+    }
+
+    favoritesCount {
+      recordId
+      count
+    }
+  }
+`
+
+// For Gatsby to pull favorites when building the site
+export const query = graphql`
+  fragment StaticFavorites on Query {
+    climatescape {
+      favoritesCount {
+        recordId
+        count
       }
     }
   }
 `
 
-const DeleteFavorite = gql`
-  mutation DeleteFavorite($id: uuid!) {
-    updateFavorites(where: { id: { _eq: $id } }, _set: { deletedAt: "NOW()" }) {
-      affected_rows
-    }
-  }
-`
+// Accepts raw data from the GetFavorites query and returns an object indexed
+// by record_id that has both count and the user's favorite ID
+function indexFavoritesData(data) {
+  if (!data) return {}
 
-export default function FavoriteButton({
-  recordId,
-  className,
-  countClassName = "",
-  count: propCount,
-  favoriteId: propFavoriteId,
-}) {
-  const { isAuthenticated, loginWithRedirect } = useAuth0()
-  const [favoriteId, setFavoriteId] = useState()
-  const [count, setCount] = useState()
-  const favorited = !!favoriteId
+  const counts = keyBy(data.favoritesCount, "recordId")
+  const favorites = keyBy(data.favorites, "recordId")
 
-  useMemo(() => {
-    setFavoriteId(propFavoriteId)
-    setCount(propCount || 0)
-  }, [propFavoriteId, propCount])
+  return mapValues(counts, ({ recordId, count }) => ({
+    count, // The total count of favorites
+    id: favorites[recordId]?.id, // The user's favorite
+  }))
+}
 
-  const [addFavorite, { loading: addLoading }] = useMutation(AddFavorite, {
-    variables: { recordId },
-    refetchQueries: ["GetFavorites"],
-    onCompleted: data => {
-      setFavoriteId(data.insertFavorites.returning[0].id)
-      setCount(count + 1)
+const APP_CLAIM = "https://climatescape.org/app"
+// Fetches all favorites data from the GraphQL API, waiting until Auth0 is done
+// loading so that the current user's favorites may be fetched. Returns a hooked
+// object that will eventually take the following shape:
+// {
+//   "rec1": { count: 14, id: "uuid-of-users-favorite" },
+//   "rec2": { count: 2, id: null },
+// }
+export function useFavorites(defaultData) {
+  const { loading: authLoading, user } = useAuth0()
+  const [favorites, setFavorites] = useState(() =>
+    indexFavoritesData(defaultData)
+  )
+  const uuid = user?.[APP_CLAIM]?.uuid
+
+  const [getFavorites, { data }] = useLazyQuery(GetFavorites, {
+    variables: {
+      loggedIn: !!user,
+      userId: uuid,
     },
   })
 
-  const [deleteFavorite, { loading: deleteLoading }] = useMutation(
-    DeleteFavorite,
-    {
-      variables: { id: favoriteId },
-      refetchQueries: ["GetFavorites"],
-      onCompleted: () => {
-        setFavoriteId(undefined)
-        setCount(count - 1)
-      },
-    }
-  )
+  // Only fetch favorites from the server once we know if a user is logged in
+  useEffect(() => {
+    if (!authLoading) getFavorites()
+  }, [authLoading, getFavorites])
 
-  const handleClick = event => {
-    event.preventDefault()
+  // Index and set favorites any time data changes
+  useMemo(() => data && setFavorites(indexFavoritesData(data)), [data])
 
-    if (!isAuthenticated) loginWithRedirect()
-    else if (addLoading || deleteLoading) noop()
-    else if (!favorited) addFavorite()
-    else deleteFavorite()
-  }
-
-  return (
-    <button
-      className={classnames(
-        "text-gray-600 h-16 ml-4 px-4 py-2 flex-shrink-0 self-center text-center rounded hover:bg-gray-200",
-        className
-      )}
-      onClick={handleClick}
-    >
-      <FontAwesomeIcon
-        icon={favorited ? heartFilled : heartOutline}
-        className={classnames("fill-curent text-lg", {
-          "text-red-500": favorited,
-        })}
-      />
-      <div className={classnames("text-sm", countClassName)}>{count}</div>
-    </button>
-  )
+  return favorites
 }
+
+export const mergeFavorites = (orgs, favs) =>
+  orgs.map(org => ({
+    ...org,
+    favorite: favs[org.recordId],
+  }))
