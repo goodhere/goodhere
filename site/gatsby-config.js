@@ -48,8 +48,8 @@ const config = {
     {
       resolve: `gatsby-source-graphql`,
       options: {
-        typeName: `Climatescape`,
-        fieldName: `climatescape`,
+        typeName: `Goodhere`,
+        fieldName: `goodhere`,
         url: process.env.GRAPHQL_URI,
       },
     },
