@@ -1,11 +1,11 @@
 {
-  "name": "climatescape",
+  "name": "goodhere",
   "private": true,
   "description": "An open source project mapping the sustainability landscape",
   "version": "0.1.0",
-  "author": "Brendan Loudermilk <brendan@sinceresoftware.co>",
+  "author": "Ben Matthews <ben@empower.agency>",
   "engines": {
-    "node": "12.15.0",
+    "node": "12.16.3",
     "yarn": "1.x"
   },
   "dependencies": {
@@ -32,7 +32,7 @@
     "gatsby-plugin-nprogress": "^2.2.1",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-postcss": "^2.2.1",
-    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-source-airtable": "^2.1.0",
     "gatsby-source-filesystem": "^2.3.8",
@@ -45,7 +45,7 @@
     "react": "^16.13.1",
     "react-apollo": "^3.1.5",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
+    "react-helmet": "^6.0.0",
     "react-instantsearch-dom": "^6.4.0",
     "react-select": "^3.1.0",
     "styled-components": "^5.0.1",
@@ -94,9 +94,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bloudermilk/sustainability-landscape"
+    "url": "https://github.com/goodhere/goodhere"
   },
   "bugs": {
-    "url": "https://github.com/bloudermilk/sustainability-landscape/issues"
+    "url": "https://github.com/goodhere/goodhere/issues"
   }
 }
