@@ -1,0 +1,25 @@
+version: '3.6'
+services:
+  postgres:
+    image: postgres:12
+    restart: always
+    volumes:
+    - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgrespassword
+  graphql-engine:
+    image: hasura/graphql-engine:v1.2.0
+    ports:
+    - "8080:8080"
+    depends_on:
+    - "postgres"
+    restart: always
+    environment:
+      HASURA_GRAPHQL_DATABASE_URL: postgres://tqhaouuoiuirui:5aa9171d295a80f5dd889cbdbc67ec3e50ec276c1d91c13f69bb1c1ee45cd1bf@ec2-46-137-124-19.eu-west-1.compute.amazonaws.com:5432/d8l7ti216r94sq
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set to "false" to disable console
+      HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-logt
+      HASURA_GRAPHQL_ADMIN_SECRET: Mzhtw9&ER?4%QL6
+      HASURA_GRAPHQL_UNAUTHORIZED_ROLE: anonymous
+      HASURA_GRAPHQL_JWT_SECRET: {"type": "RS512", "key": "-----BEGIN CERTIFICATE-----\nMIIC/zCCAeegAwIBAgIJc9d/pjisLf5CMA0GCSqGSIb3DQEBCwUAMB0xGzAZBgNV\nBAMTEmdvb2RoZXJlLmF1dGgwLmNvbTAeFw0yMDA1MDIxNzEzMTVaFw0zNDAxMDkx\nNzEzMTVaMB0xGzAZBgNVBAMTEmdvb2RoZXJlLmF1dGgwLmNvbTCCASIwDQYJKoZI\nhvcNAQEBBQADggEPADCCAQoCggEBAPk+Vb8TynPYiDH7U25OaBRNDqDwsVQ5Dtof\nI61llbIO612L1AyhLSfFcpNJp40u/nm4WHXpSPnr62UJO+tvv7dVN1mA3RcLiejU\ne8bPnhEv7i1r0YV3Q98cZH4okzgb7GRbm4GAxi5NTMqf4J6M2RBIDXb83s6O+bRA\neSrlycX5aPaC1/EkLLmyV9JbDAstshtvWb86qLJF7/MKFjqHP32Uy7XxdavQgh7G\nPZIFc9Ok+cYRf1VQmr3tmGDa5tdsX4Z7EF94FSuKHWgu8RTphpnYbyl7SRyALbhi\nE4MmPNpV92BEPUaEQCL2HvGZxXis06rUcscLPzPhROGO3Y4GDSkCAwEAAaNCMEAw\nDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUIgVg5sWkuRCYH0SVhd//Kz4R59Aw\nDgYDVR0PAQH/BAQDAgKEMA0GCSqGSIb3DQEBCwUAA4IBAQDrpTvrv38zZykL6KT5\n0bE3639XMfyLRFoZLXhRMudOT8+2t1koT8IGrYumyeQfqwZTlHy4n2YUwU4VBbZh\nBw0W2ZWtce15cyiHy3aGPzzQWGhwA4OaZPOmu+ZcagGaGN/qyNgsPNPLF3FosID3\nV8Gzv19B4kt7LZH3dsrAC2EkottT7KohRs9D7F7ujTOxk8dHPFLFJTzS7bojLUBV\nWZHdNE6fbbjuP8U2pns6BBd5mctpBw/bqx8th98RxTyMLxa0ozxpo1WXLjjsZI6Z\nCmz/addDhm6Av71qzAOsDDeD6LH2XxsFhGooRWteid6czA1BBUiEoUG2BFcR3KaL\nlqed\n-----END CERTIFICATE-----"}
+volumes:
+  db_data:

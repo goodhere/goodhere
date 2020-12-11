@@ -1,0 +1,35 @@
+name: Climatescape website Node.js CI
+
+on:
+  pull_request:
+    paths-ignore:
+    - '.github/workflows/backend_nodejs.yml'
+    - '.idea/**'
+    - 'backend/**'
+  push:
+    paths-ignore:
+    - '.github/workflows/backend_nodejs.yml'
+    - '.idea/**'
+    - 'backend/**'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+      working-directory: site
+    - run: npm run lint
+      working-directory: site
+      env:
+        CI: true

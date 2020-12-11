@@ -1,0 +1,12 @@
+[build]
+  base    = "site"
+  publish = "public"
+  command = "npm run build || (cat /opt/buildhome/.npm/_logs/*-debug.log ; sleep 120 ; false)"
+  # Always build the site, regardless of code updates: https://bit.ly/3fxbQO6
+  ignore = "sh this-always-fails"
+
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
+
+[[plugins]]
+  package = "netlify-plugin-algolia-export"
