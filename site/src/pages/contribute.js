@@ -54,18 +54,30 @@ export default function ContributePage({ data }) {
 
   return (
     <Layout contentClassName="bg-gray-100">
-      <SEO title="Contribute to Climatescape" />
+      <SEO title="Contribute to Good Here" />
       <div className="flex flex-col mx-auto container lg:flex-row lg:w-4/5">
         <div className="lg:w-3/5 p-3 lg:p-6">
           <div>
+            <Header>About Good Here</Header>
+            <p className="mt-2">
+              Good Here is an open database of social impact organisations.
+            </p>
+            <p className="mt-2">
+              We help you discover impactful organizations, connect with the
+              changemakers behind them, and pursue new social impact opportunities.
+            </p>
+            <p className="mt-2">
+              Our data is community-moderated and published under the permissive Creative Commons BY-SA license. This website is open source and
+              available on GitHub.
+            </p>
             <Header>Submit a project</Header>
             <p>
               We invite anyone to submit new projects to Good Here. The
               only requirement for acceptance is a positive social impact.
             </p>
             <p className="mt-2">
-              For investors, grant makers, project finance, or
-              other forms of capital, use the{" "}
+              For investors and organizations providing grants, project finance, or
+              other forms of funding, use the{" "}
               <TextLink newWindow href={capitalAddFormUrl}>
                 Funding Form
               </TextLink>
@@ -96,7 +108,7 @@ export default function ContributePage({ data }) {
                 Contribute to the development of this website{" "}
                 <TextLink
                   newWindow
-                  href="https://github.com/benrmatthews/goodhere/issues"
+                  href="https://github.com/benrmatthews/goodhere/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22"
                 >
                   on GitHub
                 </TextLink>

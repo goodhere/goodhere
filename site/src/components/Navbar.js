@@ -62,9 +62,10 @@ const Navbar = () => {
             "lg:flex lg:flex-row lg:items-center lg:mb-0"
           )}
         >
-          <NavLink to="/organizations">Projects</NavLink>
-          <NavLink to="/capital">Funding</NavLink>
           <NavLink to="/contribute">About</NavLink>
+          <NavLink to="/organizations">Startups</NavLink>
+          <NavLink to="/capital">Funding</NavLink>
+          <NavLink to="https://goodhere.discourse.group/">Community</NavLink>
 
           {isAuthenticated ? (
             <button
@@ -74,13 +75,12 @@ const Navbar = () => {
               Sign out
             </button>
           ) : (
-            <a href="https://airtable.com/shrwx4PHtGAS15tUN" target="_blank">
-              <button
-                className="mx-3 px-4 my-2 py-1 border rounded border-gray-600 hover:text-gray-900 hover:border-gray-800"
-              >
-                Add project
-              </button>
-            </a>
+            <button
+              className="mx-3 px-4 my-2 py-1 border rounded border-grey-600 hover:text-red-900 hover:border-red-800"
+              onClick={() => loginWithRedirect()}
+            >
+              Sign in
+            </button>
           )}
         </div>
       </div>

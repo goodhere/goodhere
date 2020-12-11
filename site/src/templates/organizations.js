@@ -14,7 +14,7 @@ import { useFavorites, mergeFavorites } from "../utils/favorites"
 
 function OrganizationsTemplate({
   data,
-  pageContext: { categoryId, categoryName, categoryCounts },
+  pageContext: { categoryId, categoryName, categoryDefinition, categoryCounts },
 }) {
   const [filter, setFilter, applyFilter] = useOrganizationFilterState()
   const favorites = useFavorites(data.climatescape)
@@ -23,7 +23,7 @@ function OrganizationsTemplate({
 
   // On first render, perform some data transformations on the raw Gatsby query
   const allOrgs = useMemo(() => {
-    // Merge results from the primary/seconary queries into one array
+    // Merge results from the primary/secondary queries into one array
     const rawOrgs = uniqBy(
       [...data.subOrganizations?.nodes, ...data.topOrganizations?.nodes],
       org => org.recordId
@@ -37,7 +37,7 @@ function OrganizationsTemplate({
 
     // Sort once using this data
     return sortOrganizations(favoritedOrgs)
-  }, [data])
+  }, [data, favorites])
 
   const favoritedOrgs = mergeFavorites(allOrgs, favorites)
   const filteredOrgs = applyFilter(favoritedOrgs)
@@ -55,6 +55,7 @@ function OrganizationsTemplate({
         <div className="lg:w-3/5">
           <IndexHeader
             title={categoryName || "All Organizations"}
+            definition={categoryDefinition}
             buttonText="Add"
             buttonUrl={organizationAddFormUrl}
             filter={filter}
@@ -92,6 +93,7 @@ export const query = graphql`
         id
         data {
           Name
+          Definition
           Parent {
             id
             data {

@@ -13,7 +13,6 @@ import Navbar from "./Navbar"
 
 import "./layout.css"
 import NetlifyLogo from "../images/netlify.svg"
-import SimpleLogo from "../images/simple.svg"
 import FooterLink from "./FooterLink"
 
 const getFooterLinks = data => [
@@ -31,7 +30,7 @@ const getFooterLinks = data => [
   },
   {
     href:
-      "https://blog.goodhere.org",
+    "https://blog.goodhere.org",
     title: "Blog",
   },
   {
@@ -39,9 +38,13 @@ const getFooterLinks = data => [
     title: "Github",
   },
   {
+    href: "https://goodhere.discourse.group/",
+    title: "Community",
+  },
+  {
     href:
-      "https://blog.goodhere.org/faqs/",
-    title: "FAQ",
+    "mailto:hello@goodhere.org",
+    title: "Contact Us",
   },
 ]
 
@@ -62,6 +65,143 @@ const Layout = ({ children, contentClassName }) => {
     <div className="flex flex-col min-h-screen antialiased">
       <Navbar />
       <main className={`flex-grow pt-16 ${contentClassName}`}>{children}</main>
+      <footer class="bg-white">
+      <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 mt-6 mb-3">
+            Sign up for updates
+          </h2>
+      <p className="mt-8 text-center">
+        Join a thriving community of social entrepreneurs and impact investors.
+      </p>
+      <p className="mt-8 text-center">
+        <iframe className="inline-block" src="https://goodhere.substack.com/embed" height="80" scrolling="no">
+        </iframe>
+      </p>
+      </footer>
+      <footer class="bg-gray-100">
+        <div class="container mx-auto px-6 pt-10 pb-6">
+          <div class="flex flex-wrap">
+          <div class="w-full md:w-1/4 text-center md:text-left">
+              <h5 class="uppercase mb-6 font-bold"><a href="https://goodhere.org/">Good Here</a></h5>
+              <ul class="mb-4">
+                <li class="mt-2">
+                  <a href="/contribute" class="hover:underline text-gray-600 hover:text-red-500">About Good Here</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://airtable.com/shrftH1zyJPidLg8f" class="hover:underline text-gray-600 hover:text-red-500">Join our editorial team</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://goodhere.discourse.group/" class="hover:underline text-gray-600 hover:text-red-500">Join our Community</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://goodhere.substack.com/subscribe" class="hover:underline text-gray-600 hover:text-red-500">Subscribe to Newsletter</a>
+                </li>
+                <li class="mt-2">
+                  <a href="http://localhost:8000/contribute" class="hover:underline text-gray-600 hover:text-red-500">Submit social impact startup</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://airtable.com/shrEjIuRpQPw3yLDJ" class="hover:underline text-gray-600 hover:text-red-500">Submit social impact funding</a>
+                </li>
+                <li class="mt-2">
+                  <a href="mailto:hello@goodhere.org" class="hover:underline text-gray-600 hover:text-red-500">Contact Good Here</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-center md:text-left">
+              <h5 class="uppercase mb-6 font-bold"><a href="https://blog.goodhere.org/">Good Here Blog</a></h5>
+              <ul class="mb-4">
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/introducing-good-here-find-social-impact-startups-and-funding/" class="hover:underline text-gray-600 hover:text-red-500">Introducing Good Here</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/sustainable-business/" class="hover:underline text-gray-600 hover:text-red-500">Sustainable Business</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/funding-for-social-impact-startups/" class="hover:underline text-gray-600 hover:text-red-500">Funding for social impact startups</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/ethical-platforms/" class="hover:underline text-gray-600 hover:text-red-500">Ethical platforms</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/digital-wellbeing/" class="hover:underline text-gray-600 hover:text-red-500">Digital wellbeing</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/open-movement/" class="hover:underline text-gray-600 hover:text-red-500">Open movements</a>
+                </li>
+                <li class="mt-2">
+                  <a href="https://blog.goodhere.org/what-is-tech-for-good/" class="hover:underline text-gray-600 hover:text-red-500">Tech for good</a>
+                </li>
+                <li class="mt-2">
+                  <a href="hhttps://blog.goodhere.org/social-impact-startups-facts-statistics/" class="hover:underline text-gray-600 hover:text-red-500">Social entreprise facts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-center md:text-left">
+              <h5 class="uppercase mb-6 font-bold"><a href="https://goodhere.org/organizations">Social Impact Startups</a></h5>
+              <ul class="mb-4">
+                <li class="mt-2">
+                  <a href="/categories/arts-and-culture" class="hover:underline text-gray-600 hover:text-red-500">Arts & Culture Startups</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/categories/community-development" class="hover:underline text-gray-600 hover:text-red-500">Community Startups</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/categories/education" class="hover:underline text-gray-600 hover:text-red-500">Education Startups</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/categories/climate-change" class="hover:underline text-gray-600 hover:text-red-500">Climate Change Startups</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/categories/healthcare" class="hover:underline text-gray-600 hover:text-red-500">Healthcare Startups</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/categories/human-rights" class="hover:underline text-gray-600 hover:text-red-500">Human Rights Startups</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/categories/media-and-apps" class="hover:underline text-gray-600 hover:text-red-500">Media Startups</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/categories/research-and-policy" class="hover:underline text-gray-600 hover:text-red-500">Research Startups</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/categories/tech-for-good" class="hover:underline text-gray-600 hover:text-red-500">Tech for Good Startups</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-center md:text-left">
+              <h5 class="uppercase mb-6 font-bold"><a href="https://goodhere.org/capital">Social Impact Funding</a></h5>
+              <ul class="mb-4">
+                <li class="mt-2">
+                  <a href="/capital/venture-capital" class="hover:underline text-gray-600 hover:text-red-500">Venture Capital for Social Impact</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/capital/venture-capital" class="hover:underline text-gray-600 hover:text-red-500">Angel Investing for Social Impact</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/capital/accelerator" class="hover:underline text-gray-600 hover:text-red-500">Social Impact Accelerators</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/capital/crowdfunding" class="hover:underline text-gray-600 hover:text-red-500">Crowdfunding Platforms</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/capital/project-finance" class="hover:underline text-gray-600 hover:text-red-500">Finance for Social Impact Projects</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/capital/grant" class="hover:underline text-gray-600 hover:text-red-500">Grants for Social Impact Startups</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/capital/incubator" class="hover:underline text-gray-600 hover:text-red-500">Social Impact Startup Incubators</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/capital/prize" class="hover:underline text-gray-600 hover:text-red-500">Social Impact Startup Prizes</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/capital/fellowships" class="hover:underline text-gray-600 hover:text-red-500">Social Impact Startup Fellowships</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
       <footer className="text-gray-800 bg-gray-200 text-center md:text-left py-3 md:px-6 md:flex items-center justify-between">
         <div className="">
           ©{data.site.siteMetadata.title}&nbsp;
@@ -80,9 +220,9 @@ const Layout = ({ children, contentClassName }) => {
           </a>
         </div>
       </footer>
-      <script async defer src="https://sapi.goodhere.org/app.js" />
+      <script async defer src="https://sapi.climatescape.org/app.js" />
       <noscript>
-        <img src="https://sapi.goodhere.org/image.gif" alt="hi" />
+        <img src="https://sapi.climatescape.org/image.gif" alt="hi" />
       </noscript>
     </div>
   )
