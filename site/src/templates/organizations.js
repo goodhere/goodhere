@@ -44,7 +44,7 @@ function OrganizationsTemplate({
 
   return (
     <Layout contentClassName="bg-gray-100 px-3 sm:px-6">
-      <SEO title={`${categoryName || "All"} organizations on Climatescape`} />
+      <SEO title={`${categoryName || "All"} organizations on Good Here`} />
 
       <div className="flex flex-col mx-auto container lg:flex-row font-sans ">
         <CategoryList
