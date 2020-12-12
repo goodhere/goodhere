@@ -43,7 +43,7 @@ export default function FavoriteButton({
     setCount(propCount || 0)
   }, [propFavoriteId, propCount])
 
-  const [addFavorite, { loading: addLoading }] = useMutation(AddFavorite, {
+/*   const [addFavorite, { loading: addLoading }] = useMutation(AddFavorite, {
     variables: { recordId },
     refetchQueries: ["GetFavorites"],
     onCompleted: data => {
@@ -62,7 +62,7 @@ export default function FavoriteButton({
         setCount(count - 1)
       },
     }
-  )
+  ) */
 
   const handleClick = event => {
     event.preventDefault()
