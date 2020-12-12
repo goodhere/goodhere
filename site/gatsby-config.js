@@ -1,12 +1,19 @@
 const algolia = require("./src/utils/algolia")
+const { from, HttpLink } = require("@apollo/client")
+const { RetryLink } = require("@apollo/client/link/retry")
 
 require("dotenv").config({
   path: `../.env.${process.env.NODE_ENV}`,
 })
 
 const RequiredEnv = [
-  `GRAPHQL_URI`, `AIRTABLE_BASE_ID`, `AIRTABLE_API_KEY`, `AUTH0_DOMAIN`,
-  `AUTH0_CLIENT_ID`, `GATSBY_ALGOLIA_APP_ID`, `GATSBY_ALGOLIA_SEARCH_KEY`,
+  `GRAPHQL_URI`,
+  `AIRTABLE_BASE_ID`,
+  `AIRTABLE_API_KEY`,
+  `AUTH0_DOMAIN`,
+  `AUTH0_CLIENT_ID`,
+  `GATSBY_ALGOLIA_APP_ID`,
+  `GATSBY_ALGOLIA_SEARCH_KEY`,
 ]
 
 const missingEnv = RequiredEnv.filter(key => !process.env[key])
@@ -20,22 +27,24 @@ if (missingEnv.length) {
   `)
 }
 
+const graphqlUri = process.env.GRAPHQL_URI
+
 const config = {
   siteMetadata: {
-    title: `Good Here`,
-    description: `Discover good things happening near you`,
-    author: `@goodhereorg`,
-    newsletterUrl: `https://goodhere.substack.com/subscribe`,
-    capitalAddFormUrl: `https://airtable.com/shrEjIuRpQPw3yLDJ`,
-    capitalEditFormUrl: `https://airtable.com/shr6Sja00g6yRyJkw`,
-    organizationAddFormUrl: `https://airtable.com/shrwx4PHtGAS15tUN`,
-    organizationEditFormUrl: `https://airtable.com/shrULYIG2ZQSyYhDn1`,
-    contributorFormUrl: `https://airtable.com/shrftH1zyJPidLg8f`,
+    title: `Climatescape`,
+    description: `Discover the organizations solving climate change`,
+    author: `@climatescape`,
+    newsletterUrl: `https://climatescape.substack.com/subscribe`,
+    capitalAddFormUrl: `https://airtable.com/shrBK2iC6AQ4Yb2lq`,
+    capitalEditFormUrl: `https://airtable.com/shrFuDB1VcHqlYd1d`,
+    organizationAddFormUrl: `https://airtable.com/shrquIaKs7TQDqFFY`,
+    organizationEditFormUrl: `https://airtable.com/shrgoaO5ppAxlqt31`,
+    contributorFormUrl: `https://airtable.com/shr4WZDPBs7mk1doW`,
     auth0: {
       domain: process.env.AUTH0_DOMAIN,
       clientId: process.env.AUTH0_CLIENT_ID,
     },
-    graphqlUri: process.env.GRAPHQL_URI,
+    graphqlUri,
   },
   plugins: [
     {
@@ -50,8 +59,14 @@ const config = {
       options: {
         typeName: `Climatescape`,
         fieldName: `climatescape`,
-        url: process.env.GRAPHQL_URI,
+        createLink: () => from([
+          new RetryLink(),
+          new HttpLink({ uri: graphqlUri }),
+        ]),
         batch: true,
+        dataLoaderOptions: {
+          maxBatchSize: 10,
+        },
       },
     },
     {
@@ -124,7 +139,8 @@ const config = {
     {
       resolve: `gatsby-transformer-sharp`,
       options: {
-        defautQuality: 75,
+        defaultQuality: 75,
+        checkSupportedExtensions: false,
       },
     },
     `gatsby-plugin-sharp`,
