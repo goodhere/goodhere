@@ -31,13 +31,13 @@ const graphqlUri = process.env.GRAPHQL_URI
 
 const config = {
   siteMetadata: {
-    title: `Climatescape`,
+    title: `Good Here`,
     description: `Discover the organizations solving climate change`,
-    author: `@climatescape`,
-    newsletterUrl: `https://climatescape.substack.com/subscribe`,
-    capitalAddFormUrl: `https://airtable.com/shrBK2iC6AQ4Yb2lq`,
+    author: `@goodhereorg`,
+    newsletterUrl: `https://goodhere.substack.com/subscribe`,
+    capitalAddFormUrl: `https://airtable.com/shrquIaKs7TQDqFFY`,
     capitalEditFormUrl: `https://airtable.com/shrFuDB1VcHqlYd1d`,
-    organizationAddFormUrl: `https://airtable.com/shrquIaKs7TQDqFFY`,
+    organizationAddFormUrl: `https://airtable.com/shrEjIuRpQPw3yLDJ`,
     organizationEditFormUrl: `https://airtable.com/shrgoaO5ppAxlqt31`,
     contributorFormUrl: `https://airtable.com/shr4WZDPBs7mk1doW`,
     analyticsHost: process.env.ANALYTICS_HOST || "",
