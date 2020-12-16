@@ -54,8 +54,8 @@ const CapitalTemplate = ({
   return (
     <Layout contentClassName="bg-gray-100 px-3 sm:px-6">
       <SEO
-        title="Climate Capital on Climatescape"
-        description="Find climate-friendly VCs, grants, project finance, and more on Climatescape"
+        title="Impact Funding on Good Here"
+        description="Find impact-focussed VCs, grants, project finance, and more on Good Here"
       />
       <div className="flex flex-col mx-auto container lg:flex-row font-sans">
         <CapitalFilters
