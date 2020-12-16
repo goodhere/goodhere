@@ -131,7 +131,7 @@ const Layout = ({ children, contentClassName }) => {
                   <a href="https://blog.goodhere.org/what-is-tech-for-good/" class="hover:underline text-gray-600 hover:text-red-500">Tech for good</a>
                 </li>
                 <li class="mt-2">
-                  <a href="hhttps://blog.goodhere.org/social-impact-startups-facts-statistics/" class="hover:underline text-gray-600 hover:text-red-500">Social entreprise facts</a>
+                  <a href="https://blog.goodhere.org/social-impact-startups-facts-statistics/" class="hover:underline text-gray-600 hover:text-red-500">Social entreprise facts</a>
                 </li>
               </ul>
             </div>
