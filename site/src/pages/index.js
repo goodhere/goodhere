@@ -43,7 +43,7 @@ export default function IndexPage({ data }) {
         </iframe>
       </p>
       <p className="mt-8 text-center">
-        <a href="https://airtable.com/shrquIaKs7TQDqFFY" class="hover:underline text-gray-600 hover:text-red-500">Or submit social impact startup</a>
+        <a href="https://airtable.com/shrwx4PHtGAS15tUN" class="hover:underline text-gray-600 hover:text-red-500">Or submit social impact startup</a>
       </p>
       <div id="organizations" className="md:py-6">
         <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 mt-6 mb-3">

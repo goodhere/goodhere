@@ -96,7 +96,7 @@ const Layout = ({ children, contentClassName }) => {
                   <a href="https://goodhere.substack.com/subscribe" class="hover:underline text-gray-600 hover:text-red-500">Subscribe to Newsletter</a>
                 </li>
                 <li class="mt-2">
-                  <a href="https://airtable.com/shrquIaKs7TQDqFFY" class="hover:underline text-gray-600 hover:text-red-500">Submit social impact startup</a>
+                  <a href="https://airtable.com/shrwx4PHtGAS15tUN" class="hover:underline text-gray-600 hover:text-red-500">Submit social impact startup</a>
                 </li>
                 <li class="mt-2">
                   <a href="https://airtable.com/shrEjIuRpQPw3yLDJ" class="hover:underline text-gray-600 hover:text-red-500">Submit social impact funding</a>
