@@ -166,6 +166,12 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
   createPage({
+    path: `/favorites`,
+    component: path.resolve(`./src/templates/favorites.js`),
+    context: { categoryCounts },
+  })
+
+  createPage({
     path: `/organizations`,
     component: path.resolve(`./src/templates/organizations.js`),
     context: { categoryCounts },

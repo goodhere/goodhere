@@ -16,11 +16,16 @@ function ViewAll({ name, href }) {
     </div>
   )
 }
+// import { Router } from "@reach/router"
+// import { FavoritesPage } from "../components/FavoritesPage"
+
+// const DefaultRoute = ({ children }) => <div>{children}</div>
 
 export default function IndexPage({ data }) {
   const categories = transformCategories(data.categories.nodes)
   const capitalTypes = transformCapitalTypes(data.capitalTypes.nodes)
 
+  console.log('indexpage', capitalTypes);
   const topCategories = categories.filter(cat => !cat.parent)
 
   return (
@@ -31,19 +36,19 @@ export default function IndexPage({ data }) {
         Find social impact startups and funding
       </h1>
       <p className="text-center text-lg text-gray-800 px-16 sm:px-64 pt-2 md:pt-4">
-        Good Here helps you discover <a href="/organizations" class="hover:underline hover:text-red-500">social impact startups</a>, connect with 
-        the <a href="https://goodhere.discourse.group/" class="hover:underline hover:text-red-500">social impact community</a>, and find <a href="/capital" class="hover:underline hover:text-red-500">social impact funding</a>. 
-        Currently tracking <u><a href="/organizations" class="hover:underline hover:text-red-500">2,775 startups</a></u> and <u><a href="/capital" class="hover:underline hover:text-red-500">453 funders</a></u>.
+        Good Here helps you discover <a href="/organizations" className="hover:underline hover:text-red-500">social impact startups</a>, connect with
+        the <a href="https://goodhere.discourse.group/" className="hover:underline hover:text-red-500">social impact community</a>, and find <a href="/capital" className="hover:underline hover:text-red-500">social impact funding</a>.
+        Currently tracking <u><a href="/organizations" className="hover:underline hover:text-red-500">2,775 startups</a></u> and <u><a href="/capital" className="hover:underline hover:text-red-500">453 funders</a></u>.
       </p>
       <p className="text-center text-lg text-gray-800 px-16 sm:px-64 pt-2 md:pt-4">
-       Join a thriving community of social entrepreneurs and impact investors.
+        Join a thriving community of social entrepreneurs and impact investors.
       </p>
       <p className="mt-8 text-center">
-      <iframe className="inline-block" src="https://goodhere.substack.com/embed" height="80" scrolling="no">
+        <iframe className="inline-block" src="https://goodhere.substack.com/embed" height="80" scrolling="no">
         </iframe>
       </p>
       <p className="mt-8 text-center">
-        <a href="https://airtable.com/shrwx4PHtGAS15tUN" class="hover:underline text-gray-600 hover:text-red-500">Or submit social impact startup</a>
+        <a href="https://airtable.com/shrwx4PHtGAS15tUN" className="hover:underline text-gray-600 hover:text-red-500">Or submit social impact startup</a>
       </p>
       <div id="organizations" className="md:py-6">
         <h2 className="font-bold text-2xl md:text-4xl text-center font-light tracking-wide text-gray-800 mt-6 mb-3">

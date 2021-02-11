@@ -182,7 +182,7 @@ const CapitalSection = ({
 
 export default function OrganizationTemplate({ data }) {
   const siteTitle = data.site.siteMetadata.title
-  const favorites = useFavorites(data.climatescape)
+  const [favorites] = useFavorites(data.climatescape)
 
   const org = transformOrganization(data.organization, (raw, out) => ({
     ...out,
