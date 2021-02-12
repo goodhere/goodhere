@@ -1,6 +1,4 @@
 [[plugins]]
-package = "netlify-plugin-gatsby-cache"
-
 package = "netlify-plugin-rss"
   [plugins.inputs]
   # required configs, customize as needed
