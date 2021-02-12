@@ -17,9 +17,20 @@
       created_at: createdAt
       user_id: userId
   object_relationships:
+    - name: favorite_count
+      using:
+        manual_configuration:
+          remote_table:
+            schema: public
+            name: favorites_count
+          column_mapping:
+            record_id: record_id
     - name: user
       using:
         foreign_key_constraint_on: user_id
+    - name: organization
+      using:
+        foreign_key_constraint_on: record_id
   insert_permissions:
     - role: user
       permission:
@@ -85,6 +96,14 @@
 - table:
     schema: public
     name: organizations
+    select_permissions:
+    - role: user
+      permission:
+        columns:
+        - data
+        - id
+        - record_id
+        filter: {}
 - table:
     schema: public
     name: users
