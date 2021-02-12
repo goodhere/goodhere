@@ -65,23 +65,26 @@ const Navbar = () => {
           <NavLink to="/contribute">About</NavLink>
           <NavLink to="/organizations">Startups</NavLink>
           <NavLink to="/capital">Funding</NavLink>
-          <NavLink to="https://goodhere.discourse.group/">Community</NavLink>
+          <a className="mr-1 p-2 hover:text-gray-900" href="https://goodhere.discourse.group/">Community</a>
 
           {isAuthenticated ? (
-            <button
-              className="p-2 hover:text-gray-900 text-left"
-              onClick={() => logout()}
-            >
-              Sign out
-            </button>
+            <>
+              <NavLink to="/favorites">Favorites</NavLink>
+              <button
+                className="p-2 hover:text-gray-900 text-left"
+                onClick={() => logout()}
+              >
+                Sign out
+              </button>
+            </>
           ) : (
-            <button
-              className="mx-3 px-4 my-2 py-1 border rounded border-grey-600 hover:text-red-900 hover:border-red-800"
-              onClick={() => loginWithRedirect()}
-            >
-              Sign in
-            </button>
-          )}
+              <button
+                className="mx-3 px-4 my-2 py-1 border rounded border-grey-600 hover:text-red-900 hover:border-red-800"
+                onClick={() => loginWithRedirect()}
+              >
+                Sign in
+              </button>
+            )}
         </div>
       </div>
     </nav>

@@ -26,7 +26,7 @@ const CapitalTemplate = ({
   pageContext: { activeTypeId },
 }) => {
   const [filter, setFilter, applyFilter] = useOrganizationFilterState()
-  const favorites = useFavorites(climatescape)
+  const [favorites] = useFavorites(climatescape)
   const capitalTypes = transformCapitalTypes(capitalTypeNodes)
   const activeType = capitalTypes.find(({ id }) => id === activeTypeId)
   const { capitalAddFormUrl } = site.siteMetadata

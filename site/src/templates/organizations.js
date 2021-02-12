@@ -17,7 +17,7 @@ function OrganizationsTemplate({
   pageContext: { categoryId, categoryName, categoryDefinition, categoryCounts },
 }) {
   const [filter, setFilter, applyFilter] = useOrganizationFilterState()
-  const favorites = useFavorites(data.climatescape)
+  const [favorites] = useFavorites(data.climatescape)
   const { organizationAddFormUrl } = data.site.siteMetadata
   const categories = transformCategories(data.categories.nodes)
 
