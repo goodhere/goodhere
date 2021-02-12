@@ -16,3 +16,7 @@ ALTER TABLE ONLY public.favorites
     ADD CONSTRAINT favorites_id_key UNIQUE (id);
 ALTER TABLE ONLY public.follow
     ADD CONSTRAINT follow_follower_id_following_id_key UNIQUE (follower_id, following_id);
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT users_email_key UNIQUE (email);
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT users_auth_id_key UNIQUE (auth_id);
