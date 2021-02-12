@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 
-
 import { useAuth0 } from "../components/Auth0Provider"
 import OrganizationCard from "../components/OrganizationCard"
 import SEO from "../components/seo"

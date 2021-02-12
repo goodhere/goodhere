@@ -10,7 +10,6 @@ const CountRoles = [
 ]
 
 function countCategoriesOrganizations(orgs) {
-  console.log('count that ', orgs);
   const ids = orgs.reduce((accum, { id: catId, data }) => {
     const parentId = data.Parent && data.Parent[0].id
     const orgIds =

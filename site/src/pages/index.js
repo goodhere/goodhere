@@ -16,16 +16,11 @@ function ViewAll({ name, href }) {
     </div>
   )
 }
-// import { Router } from "@reach/router"
-// import { FavoritesPage } from "../components/FavoritesPage"
-
-// const DefaultRoute = ({ children }) => <div>{children}</div>
 
 export default function IndexPage({ data }) {
   const categories = transformCategories(data.categories.nodes)
   const capitalTypes = transformCapitalTypes(data.capitalTypes.nodes)
 
-  console.log('indexpage', capitalTypes);
   const topCategories = categories.filter(cat => !cat.parent)
 
   return (
